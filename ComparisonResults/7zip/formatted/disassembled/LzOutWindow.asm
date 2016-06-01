@@ -1,0 +1,18 @@
+?Init@CLzOutWindow@@QAEX_N@Z proc near
+push ['ebp']
+mov ['ebp,', 'esp']
+push ['ecx']
+mov ['[ebp+var_4],', '0CCCCCCCCh']
+mov ['[ebp+var_4],', 'ecx']
+movzx ['eax,', '[ebp+arg_0]']
+test ['eax,', 'eax']
+jnz ['short', 'loc_1E']
+mov ['ecx,', '[ebp+var_4]']
+call ['?Init@COutBuffer@@QAEXXZ']
+add ['esp,', '4']
+cmp ['ebp,', 'esp']
+call ['__RTC_CheckEsp']
+mov ['esp,', 'ebp']
+pop ['ebp']
+retn ['4']
+endp
