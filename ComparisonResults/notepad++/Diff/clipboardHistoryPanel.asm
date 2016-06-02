@@ -1,0 +1,63 @@
+??$_Uninit_copy@V?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@std@@PAEV?$allocator@E@2@@std@@YAPAEV?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@0@0PAEAAU?$_Wrap_alloc@V?$allocator@E@std@@@0@U_Nonscalar_ptr_iterator_tag@0@@Z
+original code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|push|push|sub|mov|mov|lea|push|call|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|mov|call|add|push|push|mov|push|call|add|mov|mov|mov|jmp|mov|add|mov|lea|call|lea|push|lea|push|call|add|movzx|test|je|lea|call|push|mov|push|mov|call|jmp|jmp|jmp|mov|add|mov|mov|cmp|je|mov|push|mov|call|jmp|push|push|call|mov|ret|mov|jmp|mov|mov|mov|mov|lea|call|mov|lea|call|mov|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|push|push|sub|mov|mov|lea|push|call|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|mov|call|add|push|push|mov|push|call|add|mov|mov|mov|jmp|mov|add|mov|lea|call|lea|push|lea|push|call|add|movzx|test|je|lea|call|push|mov|push|mov|call|jmp|jmp|
+
+end ??$_Uninit_copy@V?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@std@@PAEV?$allocator@E@2@@std@@YAPAEV?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@0@0PAEAAU?$_Wrap_alloc@V?$allocator@E@std@@@0@U_Nonscalar_ptr_iterator_tag@0@@Z
+??$_Construct@V?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@std@@@?$vector@EV?$allocator@E@std@@@std@@QAEXV?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@1@0Uforward_iterator_tag@1@@Z
+original code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|mov|call|add|mov|mov|push|mov|call|movzx|test|je|mov|mov|mov|push|sub|mov|mov|lea|push|call|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|jmp|mov|call|push|push|call|mov|ret|mov|jmp|mov|mov|lea|call|mov|lea|call|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|mov|call|add|mov|mov|push|mov|call|movzx|test|je|mov|mov|mov|push|sub|mov|mov|lea|push|call|mov|mov|mov|mov|sub|mov|mov|lea|push|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|jmp|
+
+end ??$_Construct@V?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@std@@@?$vector@EV?$allocator@E@std@@@std@@QAEXV?$move_iterator@V?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@E@std@@@std@@@std@@@1@0Uforward_iterator_tag@1@@Z
+??$_Uninit_move@PAV?$vector@EV?$allocator@E@std@@@std@@PAV12@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@2@V12@@std@@YAPAV?$vector@EV?$allocator@E@std@@@0@PAV10@00AAU?$_Wrap_alloc@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@std@@@0@0U_Nonscalar_ptr_iterator_tag@0@@Z
+original code :
+push|mov|push|push|mov|push|push|push|push|push|push|mov|xor|push|lea|mov|mov|push|push|mov|push|mov|push|call|add|push|push|mov|push|call|add|mov|mov|mov|jmp|mov|add|mov|mov|add|mov|mov|cmp|je|mov|push|mov|push|mov|call|jmp|jmp|jmp|mov|add|mov|mov|cmp|je|mov|push|mov|call|jmp|push|push|call|mov|ret|mov|jmp|mov|mov|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|push|push|push|push|mov|xor|push|lea|mov|mov|push|push|mov|push|mov|push|call|add|push|push|mov|push|call|add|mov|mov|mov|jmp|mov|add|mov|mov|add|mov|mov|cmp|je|mov|push|mov|push|mov|call|jmp|jmp|
+
+end ??$_Uninit_move@PAV?$vector@EV?$allocator@E@std@@@std@@PAV12@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@2@V12@@std@@YAPAV?$vector@EV?$allocator@E@std@@@0@PAV10@00AAU?$_Wrap_alloc@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@std@@@0@0U_Nonscalar_ptr_iterator_tag@0@@Z
+??$_Uninit_fill_n@PAV?$vector@EV?$allocator@E@std@@@std@@IV12@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@2@V12@@std@@YAXPAV?$vector@EV?$allocator@E@std@@@0@IPBV10@AAU?$_Wrap_alloc@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@std@@@0@0U_Nonscalar_ptr_iterator_tag@0@@Z
+original code :
+push|mov|push|push|mov|push|push|push|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|mov|jmp|mov|sub|mov|mov|add|mov|cmp|jbe|mov|push|mov|push|mov|call|jmp|jmp|jmp|mov|add|mov|mov|cmp|je|mov|push|mov|call|jmp|push|push|call|mov|ret|mov|jmp|mov|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|push|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|mov|jmp|mov|sub|mov|mov|add|mov|cmp|jbe|mov|push|mov|push|mov|call|jmp|jmp|
+
+end ??$_Uninit_fill_n@PAV?$vector@EV?$allocator@E@std@@@std@@IV12@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@2@V12@@std@@YAXPAV?$vector@EV?$allocator@E@std@@@0@IPBV10@AAU?$_Wrap_alloc@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@std@@@0@0U_Nonscalar_ptr_iterator_tag@0@@Z
+?_Reallocate@?$vector@EV?$allocator@E@std@@@std@@IAEXI@Z
+original code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|push|lea|push|mov|call|mov|call|mov|mov|mov|push|mov|mov|push|mov|mov|push|mov|call|jmp|mov|push|mov|push|lea|push|mov|call|mov|call|push|push|call|mov|ret|mov|jmp|mov|mov|call|mov|mov|cmp|je|mov|mov|push|mov|mov|push|mov|call|mov|mov|mov|sub|push|mov|mov|push|lea|push|mov|call|mov|call|mov|call|mov|add|mov|mov|mov|add|mov|mov|mov|mov|mov|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|push|lea|push|mov|call|mov|call|mov|mov|mov|push|mov|mov|push|mov|mov|push|mov|call|jmp|
+
+end ?_Reallocate@?$vector@EV?$allocator@E@std@@@std@@IAEXI@Z
+??4?$vector@EV?$allocator@E@std@@@std@@QAEAAV01@ABV01@@Z
+original code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|cmp|je|lea|push|mov|call|push|lea|push|mov|call|push|call|add|movzx|test|je|xor|je|mov|call|lea|push|mov|call|push|mov|call|mov|call|mov|call|movzx|test|je|mov|call|jmp|mov|call|mov|mov|call|cmp|ja|mov|mov|push|mov|mov|push|mov|mov|push|call|add|mov|mov|mov|push|mov|push|mov|call|mov|call|mov|add|mov|mov|jmp|mov|call|mov|mov|call|cmp|ja|mov|call|mov|add|mov|mov|mov|push|mov|push|mov|mov|push|call|add|mov|mov|push|mov|mov|push|mov|push|mov|call|mov|mov|jmp|mov|cmp|je|mov|mov|push|mov|mov|push|mov|call|mov|mov|mov|sub|push|mov|mov|push|lea|push|mov|call|mov|call|mov|call|push|mov|call|movzx|test|je|mov|mov|mov|push|mov|mov|push|mov|mov|push|mov|call|mov|mov|jmp|mov|call|push|push|call|mov|ret|mov|jmp|mov|mov|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|cmp|je|lea|push|mov|call|push|lea|push|mov|call|push|call|add|movzx|test|je|xor|je|mov|call|lea|push|mov|call|push|mov|call|mov|call|mov|call|movzx|test|je|mov|call|jmp|mov|call|mov|mov|call|cmp|ja|mov|mov|push|mov|mov|push|mov|mov|push|call|add|mov|mov|mov|push|mov|push|mov|call|mov|call|mov|add|mov|mov|jmp|mov|call|mov|mov|call|cmp|ja|mov|call|mov|add|mov|mov|mov|push|mov|push|mov|mov|push|call|add|mov|mov|push|mov|mov|push|mov|push|mov|call|mov|mov|jmp|mov|cmp|je|mov|mov|push|mov|mov|push|mov|call|mov|mov|mov|sub|push|mov|mov|push|lea|push|mov|call|mov|call|mov|call|push|mov|call|movzx|test|je|mov|mov|mov|push|mov|mov|push|mov|mov|push|mov|call|mov|mov|jmp|
+
+end ??4?$vector@EV?$allocator@E@std@@@std@@QAEAAV01@ABV01@@Z
+??0?$vector@EV?$allocator@E@std@@@std@@QAE@ABV01@@Z
+original code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|lea|push|lea|push|mov|call|mov|call|push|mov|call|mov|mov|call|push|mov|call|movzx|test|je|mov|mov|mov|push|sub|mov|mov|push|mov|call|mov|mov|mov|mov|sub|mov|mov|push|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|jmp|mov|call|push|push|call|mov|ret|mov|jmp|mov|mov|mov|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|lea|push|lea|push|mov|call|mov|call|push|mov|call|mov|mov|call|push|mov|call|movzx|test|je|mov|mov|mov|push|sub|mov|mov|push|mov|call|mov|mov|mov|mov|sub|mov|mov|push|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|jmp|
+
+end ??0?$vector@EV?$allocator@E@std@@@std@@QAE@ABV01@@Z
+?_Insert_n@?$vector@V?$vector@EV?$allocator@E@std@@@std@@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@2@@std@@IAE?AV?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@V?$vector@EV?$allocator@E@std@@@std@@@std@@@std@@@2@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@V?$vector@EV?$allocator@E@std@@@std@@@std@@@std@@@2@IABV?$vector@EV?$allocator@E@std@@@2@@Z
+original code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|mov|lea|call|cmp|jne|mov|mov|cmp|jb|mov|mov|cmp|jae|push|push|push|call|add|mov|mov|sub|sar|mov|cmp|jne|jmp|mov|call|cmp|jae|mov|call|mov|mov|call|sub|cmp|jae|mov|call|mov|call|add|push|mov|call|mov|mov|push|lea|push|mov|call|mov|call|mov|mov|mov|sub|sar|mov|mov|mov|mov|push|call|add|push|mov|push|mov|shl|add|push|mov|call|mov|add|mov|mov|push|mov|push|mov|mov|push|mov|call|mov|add|mov|mov|add|shl|add|push|mov|mov|push|mov|push|mov|call|jmp|cmp|jle|mov|shl|add|push|mov|push|mov|call|cmp|jle|mov|shl|add|mov|shl|add|push|mov|shl|add|push|mov|call|mov|push|mov|push|lea|push|mov|call|mov|call|push|push|call|mov|ret|mov|jmp|mov|mov|call|add|mov|mov|cmp|je|mov|mov|push|mov|mov|push|mov|call|mov|mov|mov|sub|sar|push|mov|mov|push|lea|push|mov|call|mov|call|mov|call|mov|shl|add|mov|mov|mov|shl|add|mov|mov|mov|mov|mov|jmp|mov|mov|sub|sar|cmp|jae|mov|push|lea|call|mov|mov|shl|add|push|mov|mov|push|mov|push|mov|call|mov|lea|push|call|add|push|mov|mov|sub|sar|mov|sub|push|mov|mov|push|mov|call|jmp|mov|shl|mov|add|push|mov|shl|add|push|mov|call|push|push|call|mov|ret|mov|jmp|mov|mov|shl|mov|add|mov|mov|mov|mov|push|mov|push|mov|call|lea|push|mov|shl|mov|mov|sub|push|mov|push|call|add|mov|lea|call|jmp|mov|push|lea|call|mov|mov|mov|mov|mov|mov|push|mov|push|mov|shl|mov|sub|push|mov|call|mov|mov|mov|mov|push|mov|push|mov|call|mov|push|mov|shl|mov|sub|push|mov|push|call|add|lea|push|mov|shl|add|push|mov|push|call|add|mov|lea|call|mov|push|mov|push|lea|push|mov|call|mov|mov|mov|mov|mov|call|mov|or|mov|mov|lea|call|mov|lea|call|mov|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|mov|lea|call|cmp|jne|mov|mov|cmp|jb|mov|mov|cmp|jae|push|push|push|call|add|mov|mov|sub|sar|mov|cmp|jne|jmp|mov|call|cmp|jae|mov|call|mov|mov|call|sub|cmp|jae|mov|call|mov|call|add|push|mov|call|mov|mov|push|lea|push|mov|call|mov|call|mov|mov|mov|sub|sar|mov|mov|mov|mov|push|call|add|push|mov|push|mov|shl|add|push|mov|call|mov|add|mov|mov|push|mov|push|mov|mov|push|mov|call|mov|add|mov|mov|add|shl|add|push|mov|mov|push|mov|push|mov|call|jmp|
+
+end ?_Insert_n@?$vector@V?$vector@EV?$allocator@E@std@@@std@@V?$allocator@V?$vector@EV?$allocator@E@std@@@std@@@2@@std@@IAE?AV?$_Vector_iterator@V?$_Vector_val@U?$_Simple_types@V?$vector@EV?$allocator@E@std@@@std@@@std@@@std@@@2@V?$_Vector_const_iterator@V?$_Vector_val@U?$_Simple_types@V?$vector@EV?$allocator@E@std@@@std@@@std@@@std@@@2@IABV?$vector@EV?$allocator@E@std@@@2@@Z
+?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z
+original code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|or|mov|mov|call|cmp|jae|mov|mov|jmp|mov|mov|shr|mov|xor|mov|div|cmp|ja|jmp|mov|call|mov|mov|shr|sub|mov|cmp|ja|mov|mov|shr|mov|add|mov|jmp|mov|call|mov|mov|mov|add|push|lea|push|mov|call|mov|call|mov|jmp|mov|mov|mov|mov|mov|add|push|lea|push|mov|call|mov|call|mov|jmp|push|push|mov|call|push|push|call|mov|ret|mov|jmp|mov|mov|ret|mov|jmp|mov|cmp|jbe|mov|push|mov|call|push|mov|push|call|add|push|push|mov|call|lea|push|mov|add|push|lea|push|mov|call|mov|call|mov|mov|mov|mov|push|mov|call|mov|mov|pop|pop|pop|pop|mov|pop|ret|
+disassembled code :
+push|mov|push|push|mov|push|push|sub|push|push|push|mov|xor|push|lea|mov|mov|mov|mov|or|mov|mov|call|cmp|jae|mov|mov|jmp|mov|mov|shr|mov|xor|mov|div|cmp|ja|jmp|mov|call|mov|mov|shr|sub|mov|cmp|ja|mov|mov|shr|mov|add|mov|jmp|mov|call|mov|mov|mov|add|push|lea|push|mov|call|mov|call|mov|jmp|
+
+end ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z
