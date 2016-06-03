@@ -1,0 +1,6644 @@
+	.file	"debug.c"
+	.intel_syntax noprefix
+	.text
+Ltext0:
+	.p2align 2,,3
+	.globl	_gg_debug_common
+	.def	_gg_debug_common;	.scl	2;	.type	32;	.endef
+_gg_debug_common:
+LFB10:
+	.file 1 "lib/debug.c"
+	.loc 1 103 0
+	.cfi_startproc
+LVL0:
+	push	edi
+LCFI0:
+	.cfi_def_cfa_offset 8
+	.cfi_offset 7, -8
+	push	esi
+LCFI1:
+	.cfi_def_cfa_offset 12
+	.cfi_offset 6, -12
+	push	ebx
+LCFI2:
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
+	sub	esp, 16
+LCFI3:
+	.cfi_def_cfa_offset 32
+	mov	esi, DWORD PTR [esp+32]
+	mov	edx, DWORD PTR [esp+36]
+	mov	ecx, DWORD PTR [esp+40]
+	mov	ebx, DWORD PTR [esp+44]
+	.loc 1 103 0
+	mov	eax, DWORD PTR ___stack_chk_guard
+	mov	DWORD PTR [esp+12], eax
+	xor	eax, eax
+	.loc 1 104 0
+	mov	eax, DWORD PTR _gg_debug_handler_session
+	test	eax, eax
+	je	L2
+	.loc 1 105 0
+	mov	edi, DWORD PTR [esp+12]
+	xor	edi, DWORD PTR ___stack_chk_guard
+	jne	L12
+	mov	DWORD PTR [esp+44], ebx
+	mov	DWORD PTR [esp+40], ecx
+	mov	DWORD PTR [esp+36], edx
+	mov	DWORD PTR [esp+32], esi
+	.loc 1 110 0
+	add	esp, 16
+LCFI4:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 16
+	pop	ebx
+LCFI5:
+	.cfi_restore 3
+	.cfi_def_cfa_offset 12
+	pop	esi
+LCFI6:
+	.cfi_restore 6
+	.cfi_def_cfa_offset 8
+	pop	edi
+LCFI7:
+	.cfi_restore 7
+	.cfi_def_cfa_offset 4
+	.loc 1 105 0
+	jmp	eax
+LVL1:
+	.p2align 2,,3
+L2:
+LCFI8:
+	.cfi_restore_state
+	.loc 1 106 0
+	mov	eax, DWORD PTR _gg_debug_handler
+	test	eax, eax
+	je	L4
+	.loc 1 107 0
+	mov	esi, DWORD PTR [esp+12]
+	xor	esi, DWORD PTR ___stack_chk_guard
+	jne	L12
+	mov	DWORD PTR [esp+40], ebx
+	mov	DWORD PTR [esp+36], ecx
+	mov	DWORD PTR [esp+32], edx
+	.loc 1 110 0
+	add	esp, 16
+LCFI9:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 16
+	pop	ebx
+LCFI10:
+	.cfi_restore 3
+	.cfi_def_cfa_offset 12
+	pop	esi
+LCFI11:
+	.cfi_restore 6
+	.cfi_def_cfa_offset 8
+	pop	edi
+LCFI12:
+	.cfi_restore 7
+	.cfi_def_cfa_offset 4
+	.loc 1 107 0
+	jmp	eax
+LVL2:
+	.p2align 2,,3
+L4:
+LCFI13:
+	.cfi_restore_state
+	.loc 1 108 0
+	test	DWORD PTR _gg_debug_level, edx
+	je	L1
+LVL3:
+LBB4:
+LBB5:
+	.loc 1 109 0
+	mov	eax, DWORD PTR _gg_debug_file
+	test	eax, eax
+	je	L14
+L7:
+	mov	edi, DWORD PTR [esp+12]
+	xor	edi, DWORD PTR ___stack_chk_guard
+	jne	L12
+	mov	DWORD PTR [esp+40], ebx
+	mov	DWORD PTR [esp+36], ecx
+	mov	DWORD PTR [esp+32], eax
+LBE5:
+LBE4:
+	.loc 1 110 0
+	add	esp, 16
+LCFI14:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 16
+	pop	ebx
+LCFI15:
+	.cfi_restore 3
+	.cfi_def_cfa_offset 12
+LVL4:
+	pop	esi
+LCFI16:
+	.cfi_restore 6
+	.cfi_def_cfa_offset 8
+	pop	edi
+LCFI17:
+	.cfi_restore 7
+	.cfi_def_cfa_offset 4
+LBB8:
+LBB6:
+	.loc 1 109 0
+	jmp	_vfprintf
+LVL5:
+	.p2align 2,,3
+L1:
+LCFI18:
+	.cfi_restore_state
+LBE6:
+LBE8:
+	.loc 1 110 0
+	mov	eax, DWORD PTR [esp+12]
+	xor	eax, DWORD PTR ___stack_chk_guard
+	jne	L12
+	add	esp, 16
+LCFI19:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 16
+	pop	ebx
+LCFI20:
+	.cfi_restore 3
+	.cfi_def_cfa_offset 12
+	pop	esi
+LCFI21:
+	.cfi_restore 6
+	.cfi_def_cfa_offset 8
+	pop	edi
+LCFI22:
+	.cfi_restore 7
+	.cfi_def_cfa_offset 4
+	ret
+LVL6:
+	.p2align 2,,3
+L14:
+LCFI23:
+	.cfi_restore_state
+LBB9:
+LBB7:
+	.loc 1 109 0
+	mov	eax, DWORD PTR __imp___iob
+	add	eax, 64
+	jmp	L7
+LVL7:
+L12:
+LBE7:
+LBE9:
+	.loc 1 110 0
+	call	___stack_chk_fail
+LVL8:
+	.cfi_endproc
+LFE10:
+	.p2align 2,,3
+	.globl	_gg_debug
+	.def	_gg_debug;	.scl	2;	.type	32;	.endef
+_gg_debug:
+LFB11:
+	.loc 1 122 0
+	.cfi_startproc
+LVL9:
+	push	edi
+LCFI24:
+	.cfi_def_cfa_offset 8
+	.cfi_offset 7, -8
+	push	esi
+LCFI25:
+	.cfi_def_cfa_offset 12
+	.cfi_offset 6, -12
+	push	ebx
+LCFI26:
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
+	sub	esp, 32
+LCFI27:
+	.cfi_def_cfa_offset 48
+	mov	esi, DWORD PTR [esp+48]
+	mov	edi, DWORD PTR [esp+52]
+	.loc 1 122 0
+	mov	eax, DWORD PTR ___stack_chk_guard
+	mov	DWORD PTR [esp+28], eax
+	xor	eax, eax
+	.loc 1 124 0
+	call	__errno
+LVL10:
+	mov	ebx, DWORD PTR [eax]
+LVL11:
+	.loc 1 126 0
+	lea	eax, [esp+56]
+LVL12:
+	.loc 1 127 0
+	mov	DWORD PTR [esp+12], eax
+	mov	DWORD PTR [esp+8], edi
+	mov	DWORD PTR [esp+4], esi
+	mov	DWORD PTR [esp], 0
+	call	_gg_debug_common
+LVL13:
+	.loc 1 129 0
+	call	__errno
+LVL14:
+	mov	DWORD PTR [eax], ebx
+	.loc 1 130 0
+	mov	eax, DWORD PTR [esp+28]
+	xor	eax, DWORD PTR ___stack_chk_guard
+	jne	L18
+	add	esp, 32
+LCFI28:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 16
+	pop	ebx
+LCFI29:
+	.cfi_restore 3
+	.cfi_def_cfa_offset 12
+LVL15:
+	pop	esi
+LCFI30:
+	.cfi_restore 6
+	.cfi_def_cfa_offset 8
+	pop	edi
+LCFI31:
+	.cfi_restore 7
+	.cfi_def_cfa_offset 4
+	ret
+LVL16:
+L18:
+LCFI32:
+	.cfi_restore_state
+	call	___stack_chk_fail
+LVL17:
+	.cfi_endproc
+LFE11:
+	.p2align 2,,3
+	.globl	_gg_debug_session
+	.def	_gg_debug_session;	.scl	2;	.type	32;	.endef
+_gg_debug_session:
+LFB12:
+	.loc 1 142 0
+	.cfi_startproc
+LVL18:
+	push	ebp
+LCFI33:
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	push	edi
+LCFI34:
+	.cfi_def_cfa_offset 12
+	.cfi_offset 7, -12
+	push	esi
+LCFI35:
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	push	ebx
+LCFI36:
+	.cfi_def_cfa_offset 20
+	.cfi_offset 3, -20
+	sub	esp, 44
+LCFI37:
+	.cfi_def_cfa_offset 64
+	mov	esi, DWORD PTR [esp+64]
+	mov	edi, DWORD PTR [esp+68]
+	mov	ebp, DWORD PTR [esp+72]
+	.loc 1 142 0
+	mov	eax, DWORD PTR ___stack_chk_guard
+	mov	DWORD PTR [esp+28], eax
+	xor	eax, eax
+	.loc 1 144 0
+	call	__errno
+LVL19:
+	mov	ebx, DWORD PTR [eax]
+LVL20:
+	.loc 1 146 0
+	lea	eax, [esp+76]
+LVL21:
+	.loc 1 147 0
+	mov	DWORD PTR [esp+12], eax
+	mov	DWORD PTR [esp+8], ebp
+	mov	DWORD PTR [esp+4], edi
+	mov	DWORD PTR [esp], esi
+	call	_gg_debug_common
+LVL22:
+	.loc 1 149 0
+	call	__errno
+LVL23:
+	mov	DWORD PTR [eax], ebx
+	.loc 1 150 0
+	mov	eax, DWORD PTR [esp+28]
+	xor	eax, DWORD PTR ___stack_chk_guard
+	jne	L22
+	add	esp, 44
+LCFI38:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 20
+	pop	ebx
+LCFI39:
+	.cfi_restore 3
+	.cfi_def_cfa_offset 16
+LVL24:
+	pop	esi
+LCFI40:
+	.cfi_restore 6
+	.cfi_def_cfa_offset 12
+	pop	edi
+LCFI41:
+	.cfi_restore 7
+	.cfi_def_cfa_offset 8
+	pop	ebp
+LCFI42:
+	.cfi_restore 5
+	.cfi_def_cfa_offset 4
+	ret
+LVL25:
+L22:
+LCFI43:
+	.cfi_restore_state
+	call	___stack_chk_fail
+LVL26:
+	.cfi_endproc
+LFE12:
+	.section .rdata,"dr"
+LC0:
+	.ascii "%.4x: \0"
+LC1:
+	.ascii " %02x\0"
+LC2:
+	.ascii "%s\0"
+	.text
+	.p2align 2,,3
+	.globl	_gg_debug_dump
+	.def	_gg_debug_dump;	.scl	2;	.type	32;	.endef
+_gg_debug_dump:
+LFB13:
+	.loc 1 163 0
+	.cfi_startproc
+LVL27:
+	push	ebp
+LCFI44:
+	.cfi_def_cfa_offset 8
+	.cfi_offset 5, -8
+	push	edi
+LCFI45:
+	.cfi_def_cfa_offset 12
+	.cfi_offset 7, -12
+	push	esi
+LCFI46:
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	push	ebx
+LCFI47:
+	.cfi_def_cfa_offset 20
+	.cfi_offset 3, -20
+	sub	esp, 156
+LCFI48:
+	.cfi_def_cfa_offset 176
+	mov	eax, DWORD PTR [esp+176]
+	mov	DWORD PTR [esp+40], eax
+	mov	eax, DWORD PTR [esp+180]
+	mov	DWORD PTR [esp+44], eax
+	mov	eax, DWORD PTR [esp+184]
+	mov	DWORD PTR [esp+32], eax
+	mov	ebx, DWORD PTR [esp+188]
+	.loc 1 163 0
+	mov	eax, DWORD PTR ___stack_chk_guard
+	mov	DWORD PTR [esp+140], eax
+	xor	eax, eax
+LVL28:
+	.loc 1 167 0
+	test	ebx, ebx
+	je	L23
+	xor	edi, edi
+	lea	eax, [esp+114]
+	mov	DWORD PTR [esp+28], eax
+LVL29:
+	.p2align 2,,3
+L24:
+LBB10:
+	.loc 1 170 0
+	mov	DWORD PTR [esp+8], edi
+	mov	DWORD PTR [esp+4], OFFSET FLAT:LC0
+	lea	eax, [esp+60]
+	mov	DWORD PTR [esp], eax
+	call	_sprintf
+LVL30:
+	.loc 1 162 0
+	lea	ebp, [esp+66]
+LBE10:
+	mov	DWORD PTR [esp+36], edi
+	mov	esi, DWORD PTR [esp+32]
+	jmp	L27
+LVL31:
+	.p2align 2,,3
+L40:
+LBB13:
+	.loc 1 175 0
+	movzx	eax, BYTE PTR [esi+edi]
+	mov	DWORD PTR [esp+8], eax
+	mov	DWORD PTR [esp+4], OFFSET FLAT:LC1
+	mov	DWORD PTR [esp], ebp
+	call	_sprintf
+LVL32:
+	inc	edi
+	add	ebp, 3
+	.loc 1 173 0
+	cmp	ebp, DWORD PTR [esp+28]
+	je	L39
+L27:
+	.loc 1 174 0
+	cmp	ebx, edi
+	ja	L40
+	.loc 1 177 0
+	mov	DWORD PTR [ebp+0], 2105376
+	inc	edi
+	add	ebp, 3
+	.loc 1 173 0
+	cmp	ebp, DWORD PTR [esp+28]
+	jne	L27
+L39:
+	mov	edi, DWORD PTR [esp+36]
+	.loc 1 182 0
+	mov	WORD PTR [esp+114], 8224
+	mov	BYTE PTR [esp+116], 0
+LVL33:
+	.loc 1 185 0
+	xor	eax, eax
+LBB11:
+	.loc 1 162 0
+	mov	ebp, DWORD PTR [esp+32]
+	add	ebp, edi
+	jmp	L29
+LVL34:
+	.p2align 2,,3
+L42:
+	.loc 1 189 0
+	mov	dl, BYTE PTR [ebp+0+eax]
+LVL35:
+	.loc 1 191 0
+	lea	ecx, [edx-32]
+	cmp	cl, 94
+	jbe	L28
+	mov	dl, 46
+LVL36:
+L28:
+	.loc 1 197 0
+	mov	BYTE PTR [esp+116+eax], dl
+LBE11:
+	.loc 1 185 0
+	inc	eax
+LVL37:
+	cmp	eax, 16
+	je	L41
+LVL38:
+L29:
+LBB12:
+	.loc 1 188 0
+	lea	edx, [eax+edi]
+	cmp	edx, ebx
+	jb	L42
+	mov	dl, 32
+	.loc 1 197 0
+	mov	BYTE PTR [esp+116+eax], dl
+LBE12:
+	.loc 1 185 0
+	inc	eax
+LVL39:
+	cmp	eax, 16
+	jne	L29
+L41:
+	.loc 1 200 0
+	mov	BYTE PTR [esp+132], 10
+LVL40:
+	.loc 1 201 0
+	mov	BYTE PTR [esp+133], 0
+LVL41:
+	.loc 1 203 0
+	lea	eax, [esp+60]
+LVL42:
+	mov	DWORD PTR [esp+12], eax
+	mov	DWORD PTR [esp+8], OFFSET FLAT:LC2
+	mov	eax, DWORD PTR [esp+44]
+	mov	DWORD PTR [esp+4], eax
+	mov	eax, DWORD PTR [esp+40]
+	mov	DWORD PTR [esp], eax
+	call	_gg_debug_session
+LVL43:
+LBE13:
+	.loc 1 167 0
+	add	edi, 16
+LVL44:
+	cmp	ebx, edi
+	ja	L24
+LVL45:
+L23:
+	.loc 1 205 0
+	mov	eax, DWORD PTR [esp+140]
+	xor	eax, DWORD PTR ___stack_chk_guard
+	jne	L43
+	add	esp, 156
+LCFI49:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 20
+	pop	ebx
+LCFI50:
+	.cfi_restore 3
+	.cfi_def_cfa_offset 16
+	pop	esi
+LCFI51:
+	.cfi_restore 6
+	.cfi_def_cfa_offset 12
+	pop	edi
+LCFI52:
+	.cfi_restore 7
+	.cfi_def_cfa_offset 8
+	pop	ebp
+LCFI53:
+	.cfi_restore 5
+	.cfi_def_cfa_offset 4
+	ret
+L43:
+LCFI54:
+	.cfi_restore_state
+	call	___stack_chk_fail
+LVL46:
+	.cfi_endproc
+LFE13:
+	.p2align 2,,3
+	.globl	_gg_debug_state
+	.def	_gg_debug_state;	.scl	2;	.type	32;	.endef
+_gg_debug_state:
+LFB14:
+	.loc 1 217 0
+	.cfi_startproc
+LVL47:
+	sub	esp, 28
+LCFI55:
+	.cfi_def_cfa_offset 32
+	mov	eax, DWORD PTR [esp+32]
+	.loc 1 217 0
+	mov	edx, DWORD PTR ___stack_chk_guard
+	mov	DWORD PTR [esp+12], edx
+	xor	edx, edx
+	cmp	eax, 73
+	ja	L47
+	mov	eax, DWORD PTR _CSWTCH.15[0+eax*4]
+L45:
+	.loc 1 300 0
+	mov	edx, DWORD PTR [esp+12]
+	xor	edx, DWORD PTR ___stack_chk_guard
+	jne	L49
+	add	esp, 28
+LCFI56:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 4
+	ret
+	.p2align 2,,3
+L47:
+LCFI57:
+	.cfi_restore_state
+	.loc 1 217 0
+	xor	eax, eax
+	jmp	L45
+L49:
+	.loc 1 300 0
+	call	___stack_chk_fail
+LVL48:
+	.cfi_endproc
+LFE14:
+	.p2align 2,,3
+	.globl	_gg_debug_event
+	.def	_gg_debug_event;	.scl	2;	.type	32;	.endef
+_gg_debug_event:
+LFB15:
+	.loc 1 312 0
+	.cfi_startproc
+LVL49:
+	sub	esp, 28
+LCFI58:
+	.cfi_def_cfa_offset 32
+	mov	eax, DWORD PTR [esp+32]
+	.loc 1 312 0
+	mov	edx, DWORD PTR ___stack_chk_guard
+	mov	DWORD PTR [esp+12], edx
+	xor	edx, edx
+	cmp	eax, 51
+	ja	L53
+	mov	eax, DWORD PTR _CSWTCH.18[0+eax*4]
+L51:
+	.loc 1 373 0
+	mov	edx, DWORD PTR [esp+12]
+	xor	edx, DWORD PTR ___stack_chk_guard
+	jne	L55
+	add	esp, 28
+LCFI59:
+	.cfi_remember_state
+	.cfi_def_cfa_offset 4
+	ret
+	.p2align 2,,3
+L53:
+LCFI60:
+	.cfi_restore_state
+	.loc 1 312 0
+	xor	eax, eax
+	jmp	L51
+L55:
+	.loc 1 373 0
+	call	___stack_chk_fail
+LVL50:
+	.cfi_endproc
+LFE15:
+	.globl	_gg_debug_file
+	.bss
+	.align 4
+_gg_debug_file:
+	.space 4
+	.globl	_gg_debug_handler_session
+	.align 4
+_gg_debug_handler_session:
+	.space 4
+	.globl	_gg_debug_handler
+	.align 4
+_gg_debug_handler:
+	.space 4
+	.globl	_gg_debug_level
+	.align 4
+_gg_debug_level:
+	.space 4
+	.section .rdata,"dr"
+LC3:
+	.ascii "GG_STATE_IDLE\0"
+LC4:
+	.ascii "GG_STATE_RESOLVING\0"
+LC5:
+	.ascii "GG_STATE_CONNECTING\0"
+LC6:
+	.ascii "GG_STATE_READING_DATA\0"
+LC7:
+	.ascii "GG_STATE_ERROR\0"
+LC8:
+	.ascii "GG_STATE_CONNECTING_HUB\0"
+LC9:
+	.ascii "GG_STATE_CONNECTING_GG\0"
+LC10:
+	.ascii "GG_STATE_READING_KEY\0"
+LC11:
+	.ascii "GG_STATE_READING_REPLY\0"
+LC12:
+	.ascii "GG_STATE_CONNECTED\0"
+LC13:
+	.ascii "GG_STATE_SENDING_QUERY\0"
+LC14:
+	.ascii "GG_STATE_READING_HEADER\0"
+LC15:
+	.ascii "GG_STATE_PARSING\0"
+LC16:
+	.ascii "GG_STATE_DONE\0"
+LC17:
+	.ascii "GG_STATE_LISTENING\0"
+LC18:
+	.ascii "GG_STATE_READING_UIN_1\0"
+LC19:
+	.ascii "GG_STATE_READING_UIN_2\0"
+LC20:
+	.ascii "GG_STATE_SENDING_ACK\0"
+LC21:
+	.ascii "GG_STATE_READING_ACK\0"
+LC22:
+	.ascii "GG_STATE_READING_REQUEST\0"
+LC23:
+	.ascii "GG_STATE_SENDING_REQUEST\0"
+LC24:
+	.ascii "GG_STATE_SENDING_FILE_INFO\0"
+	.align 4
+LC25:
+	.ascii "GG_STATE_READING_PRE_FILE_INFO\0"
+LC26:
+	.ascii "GG_STATE_READING_FILE_INFO\0"
+LC27:
+	.ascii "GG_STATE_SENDING_FILE_ACK\0"
+LC28:
+	.ascii "GG_STATE_READING_FILE_ACK\0"
+LC29:
+	.ascii "GG_STATE_SENDING_FILE_HEADER\0"
+LC30:
+	.ascii "GG_STATE_READING_FILE_HEADER\0"
+LC31:
+	.ascii "GG_STATE_GETTING_FILE\0"
+LC32:
+	.ascii "GG_STATE_SENDING_FILE\0"
+LC33:
+	.ascii "GG_STATE_READING_VOICE_ACK\0"
+LC34:
+	.ascii "GG_STATE_READING_VOICE_HEADER\0"
+LC35:
+	.ascii "GG_STATE_READING_VOICE_SIZE\0"
+LC36:
+	.ascii "GG_STATE_READING_VOICE_DATA\0"
+LC37:
+	.ascii "GG_STATE_SENDING_VOICE_ACK\0"
+	.align 4
+LC38:
+	.ascii "GG_STATE_SENDING_VOICE_REQUEST\0"
+LC39:
+	.ascii "GG_STATE_READING_TYPE\0"
+LC40:
+	.ascii "GG_STATE_TLS_NEGOTIATION\0"
+LC41:
+	.ascii "GG_STATE_REQUESTING_ID\0"
+LC42:
+	.ascii "GG_STATE_WAITING_FOR_ACCEPT\0"
+LC43:
+	.ascii "GG_STATE_WAITING_FOR_INFO\0"
+LC44:
+	.ascii "GG_STATE_READING_ID\0"
+LC45:
+	.ascii "GG_STATE_SENDING_ID\0"
+LC46:
+	.ascii "GG_STATE_RESOLVING_GG\0"
+LC47:
+	.ascii "GG_STATE_RESOLVING_RELAY\0"
+LC48:
+	.ascii "GG_STATE_CONNECTING_RELAY\0"
+LC49:
+	.ascii "GG_STATE_READING_RELAY\0"
+LC50:
+	.ascii "GG_STATE_DISCONNECTING\0"
+LC51:
+	.ascii "GG_STATE_CONNECT_HUB\0"
+LC52:
+	.ascii "GG_STATE_CONNECT_PROXY_HUB\0"
+LC53:
+	.ascii "GG_STATE_CONNECT_GG\0"
+LC54:
+	.ascii "GG_STATE_CONNECT_PROXY_GG\0"
+LC55:
+	.ascii "GG_STATE_CONNECTING_PROXY_HUB\0"
+LC56:
+	.ascii "GG_STATE_CONNECTING_PROXY_GG\0"
+LC57:
+	.ascii "GG_STATE_RESOLVE_HUB_SYNC\0"
+LC58:
+	.ascii "GG_STATE_RESOLVE_HUB_ASYNC\0"
+	.align 4
+LC59:
+	.ascii "GG_STATE_RESOLVE_PROXY_HUB_SYNC\0"
+	.align 4
+LC60:
+	.ascii "GG_STATE_RESOLVE_PROXY_HUB_ASYNC\0"
+	.align 4
+LC61:
+	.ascii "GG_STATE_RESOLVE_PROXY_GG_SYNC\0"
+	.align 4
+LC62:
+	.ascii "GG_STATE_RESOLVE_PROXY_GG_ASYNC\0"
+LC63:
+	.ascii "GG_STATE_RESOLVE_GG_SYNC\0"
+LC64:
+	.ascii "GG_STATE_RESOLVE_GG_ASYNC\0"
+LC65:
+	.ascii "GG_STATE_RESOLVING_HUB\0"
+LC66:
+	.ascii "GG_STATE_RESOLVING_PROXY_HUB\0"
+LC67:
+	.ascii "GG_STATE_RESOLVING_PROXY_GG\0"
+LC68:
+	.ascii "GG_STATE_SEND_HUB\0"
+LC69:
+	.ascii "GG_STATE_SEND_PROXY_HUB\0"
+LC70:
+	.ascii "GG_STATE_SEND_PROXY_GG\0"
+LC71:
+	.ascii "GG_STATE_SENDING_HUB\0"
+LC72:
+	.ascii "GG_STATE_SENDING_PROXY_HUB\0"
+LC73:
+	.ascii "GG_STATE_SENDING_PROXY_GG\0"
+LC74:
+	.ascii "GG_STATE_READING_HUB\0"
+LC75:
+	.ascii "GG_STATE_READING_PROXY_HUB\0"
+LC76:
+	.ascii "GG_STATE_READING_PROXY_GG\0"
+	.align 32
+_CSWTCH.15:
+	.long	LC3
+	.long	LC4
+	.long	LC5
+	.long	LC6
+	.long	LC7
+	.long	LC8
+	.long	LC9
+	.long	LC10
+	.long	LC11
+	.long	LC12
+	.long	LC13
+	.long	LC14
+	.long	LC15
+	.long	LC16
+	.long	LC17
+	.long	LC18
+	.long	LC19
+	.long	LC20
+	.long	LC21
+	.long	LC22
+	.long	LC23
+	.long	LC24
+	.long	LC25
+	.long	LC26
+	.long	LC27
+	.long	LC28
+	.long	LC29
+	.long	LC30
+	.long	LC31
+	.long	LC32
+	.long	LC33
+	.long	LC34
+	.long	LC35
+	.long	LC36
+	.long	LC37
+	.long	LC38
+	.long	LC39
+	.long	LC40
+	.long	LC41
+	.long	LC42
+	.long	LC43
+	.long	LC44
+	.long	LC45
+	.long	LC46
+	.long	LC47
+	.long	LC48
+	.long	LC49
+	.long	LC50
+	.long	LC51
+	.long	LC52
+	.long	LC53
+	.long	LC54
+	.long	LC55
+	.long	LC56
+	.long	LC57
+	.long	LC58
+	.long	LC59
+	.long	LC60
+	.long	LC61
+	.long	LC62
+	.long	LC63
+	.long	LC64
+	.long	LC65
+	.long	LC66
+	.long	LC67
+	.long	LC68
+	.long	LC69
+	.long	LC70
+	.long	LC71
+	.long	LC72
+	.long	LC73
+	.long	LC74
+	.long	LC75
+	.long	LC76
+LC77:
+	.ascii "GG_EVENT_NONE\0"
+LC78:
+	.ascii "GG_EVENT_MSG\0"
+LC79:
+	.ascii "GG_EVENT_NOTIFY\0"
+LC80:
+	.ascii "GG_EVENT_NOTIFY_DESCR\0"
+LC81:
+	.ascii "GG_EVENT_STATUS\0"
+LC82:
+	.ascii "GG_EVENT_ACK\0"
+LC83:
+	.ascii "GG_EVENT_PONG\0"
+LC84:
+	.ascii "GG_EVENT_CONN_FAILED\0"
+LC85:
+	.ascii "GG_EVENT_CONN_SUCCESS\0"
+LC86:
+	.ascii "GG_EVENT_DISCONNECT\0"
+LC87:
+	.ascii "GG_EVENT_DCC_NEW\0"
+LC88:
+	.ascii "GG_EVENT_DCC_ERROR\0"
+LC89:
+	.ascii "GG_EVENT_DCC_DONE\0"
+LC90:
+	.ascii "GG_EVENT_DCC_CLIENT_ACCEPT\0"
+LC91:
+	.ascii "GG_EVENT_DCC_CALLBACK\0"
+LC92:
+	.ascii "GG_EVENT_DCC_NEED_FILE_INFO\0"
+LC93:
+	.ascii "GG_EVENT_DCC_NEED_FILE_ACK\0"
+LC94:
+	.ascii "GG_EVENT_DCC_NEED_VOICE_ACK\0"
+LC95:
+	.ascii "GG_EVENT_DCC_VOICE_DATA\0"
+	.align 4
+LC96:
+	.ascii "GG_EVENT_PUBDIR50_SEARCH_REPLY\0"
+LC97:
+	.ascii "GG_EVENT_PUBDIR50_READ\0"
+LC98:
+	.ascii "GG_EVENT_PUBDIR50_WRITE\0"
+LC99:
+	.ascii "GG_EVENT_STATUS60\0"
+LC100:
+	.ascii "GG_EVENT_NOTIFY60\0"
+LC101:
+	.ascii "GG_EVENT_USERLIST\0"
+LC102:
+	.ascii "GG_EVENT_IMAGE_REQUEST\0"
+LC103:
+	.ascii "GG_EVENT_IMAGE_REPLY\0"
+LC104:
+	.ascii "GG_EVENT_DCC_ACK\0"
+LC105:
+	.ascii "GG_EVENT_DCC7_NEW\0"
+LC106:
+	.ascii "GG_EVENT_DCC7_ACCEPT\0"
+LC107:
+	.ascii "GG_EVENT_DCC7_REJECT\0"
+LC108:
+	.ascii "GG_EVENT_DCC7_CONNECTED\0"
+LC109:
+	.ascii "GG_EVENT_DCC7_ERROR\0"
+LC110:
+	.ascii "GG_EVENT_DCC7_DONE\0"
+LC111:
+	.ascii "GG_EVENT_DCC7_PENDING\0"
+LC112:
+	.ascii "GG_EVENT_XML_EVENT\0"
+LC113:
+	.ascii "GG_EVENT_DISCONNECT_ACK\0"
+LC114:
+	.ascii "GG_EVENT_TYPING_NOTIFICATION\0"
+LC115:
+	.ascii "GG_EVENT_USER_DATA\0"
+LC116:
+	.ascii "GG_EVENT_MULTILOGON_MSG\0"
+LC117:
+	.ascii "GG_EVENT_MULTILOGON_INFO\0"
+LC118:
+	.ascii "GG_EVENT_USERLIST100_VERSION\0"
+LC119:
+	.ascii "GG_EVENT_USERLIST100_REPLY\0"
+LC120:
+	.ascii "GG_EVENT_IMTOKEN\0"
+LC121:
+	.ascii "GG_EVENT_PONG110\0"
+LC122:
+	.ascii "GG_EVENT_JSON_EVENT\0"
+LC123:
+	.ascii "GG_EVENT_ACK110\0"
+LC124:
+	.ascii "GG_EVENT_CHAT_INFO\0"
+LC125:
+	.ascii "GG_EVENT_CHAT_INFO_GOT_ALL\0"
+LC126:
+	.ascii "GG_EVENT_CHAT_INFO_UPDATE\0"
+LC127:
+	.ascii "GG_EVENT_CHAT_CREATED\0"
+LC128:
+	.ascii "GG_EVENT_CHAT_INVITE_ACK\0"
+	.align 32
+_CSWTCH.18:
+	.long	LC77
+	.long	LC78
+	.long	LC79
+	.long	LC80
+	.long	LC81
+	.long	LC82
+	.long	LC83
+	.long	LC84
+	.long	LC85
+	.long	LC86
+	.long	LC87
+	.long	LC88
+	.long	LC89
+	.long	LC90
+	.long	LC91
+	.long	LC92
+	.long	LC93
+	.long	LC94
+	.long	LC95
+	.long	LC96
+	.long	LC97
+	.long	LC98
+	.long	LC99
+	.long	LC100
+	.long	LC101
+	.long	LC102
+	.long	LC103
+	.long	LC104
+	.long	LC105
+	.long	LC106
+	.long	LC107
+	.long	LC108
+	.long	LC109
+	.long	LC110
+	.long	LC111
+	.long	LC112
+	.long	LC113
+	.long	LC114
+	.long	LC115
+	.long	LC116
+	.long	LC117
+	.long	LC118
+	.long	LC119
+	.long	LC120
+	.long	LC121
+	.long	LC122
+	.long	LC123
+	.long	LC124
+	.long	LC125
+	.long	LC126
+	.long	LC127
+	.long	LC128
+	.text
+Letext0:
+	.file 2 "c:/workspace/pidgin-devel/win32-dev/mingw-4.7.2/bin/../lib/gcc/mingw32/4.7.2/include/stddef.h"
+	.file 3 "c:/workspace/pidgin-devel/win32-dev/mingw-4.7.2/bin/../lib/gcc/mingw32/4.7.2/include/stdarg.h"
+	.file 4 "c:/workspace/pidgin-devel/win32-dev/mingw-4.7.2/bin/../lib/gcc/mingw32/4.7.2/../../../../include/stdio.h"
+	.file 5 "c:/workspace/pidgin-devel/win32-dev/mingw-4.7.2/bin/../lib/gcc/mingw32/4.7.2/../../../../include/stdint.h"
+	.file 6 "lib/libgadu.h"
+	.file 7 "c:/workspace/pidgin-devel/win32-dev/mingw-4.7.2/bin/../lib/gcc/mingw32/4.7.2/../../../../include/errno.h"
+	.section	.debug_info,"dr"
+Ldebug_info0:
+	.long	0x344c
+	.word	0x2
+	.secrel32	Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii "GNU C 4.7.2\0"
+	.byte	0x1
+	.ascii "lib/debug.c\0"
+	.ascii "C:\\\\workspace\\\\pidgin-devel\\\\pidgin-2.10.11\\\\libpurple\\\\protocols\\\\gg\0"
+	.long	Ltext0
+	.long	Letext0
+	.secrel32	Ldebug_line0
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.ascii "int\0"
+	.uleb128 0x3
+	.ascii "size_t\0"
+	.byte	0x2
+	.byte	0xd5
+	.long	0x8c
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.ascii "unsigned int\0"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.ascii "short unsigned int\0"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.ascii "long int\0"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.ascii "long long int\0"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.ascii "short int\0"
+	.uleb128 0x3
+	.ascii "__gnuc_va_list\0"
+	.byte	0x3
+	.byte	0x28
+	.long	0xf2
+	.uleb128 0x4
+	.byte	0x4
+	.ascii "__builtin_va_list\0"
+	.long	0x10a
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.ascii "char\0"
+	.uleb128 0x3
+	.ascii "va_list\0"
+	.byte	0x3
+	.byte	0x66
+	.long	0xdc
+	.uleb128 0x5
+	.ascii "_iobuf\0"
+	.byte	0x20
+	.byte	0x4
+	.byte	0x81
+	.long	0x1b8
+	.uleb128 0x6
+	.ascii "_ptr\0"
+	.byte	0x4
+	.byte	0x83
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.ascii "_cnt\0"
+	.byte	0x4
+	.byte	0x84
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0x6
+	.ascii "_base\0"
+	.byte	0x4
+	.byte	0x85
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0x6
+	.ascii "_flag\0"
+	.byte	0x4
+	.byte	0x86
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0x6
+	.ascii "_file\0"
+	.byte	0x4
+	.byte	0x87
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0x6
+	.ascii "_charbuf\0"
+	.byte	0x4
+	.byte	0x88
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0x6
+	.ascii "_bufsiz\0"
+	.byte	0x4
+	.byte	0x89
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0x6
+	.ascii "_tmpfname\0"
+	.byte	0x4
+	.byte	0x8a
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x10a
+	.uleb128 0x3
+	.ascii "FILE\0"
+	.byte	0x4
+	.byte	0x8b
+	.long	0x121
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.ascii "signed char\0"
+	.uleb128 0x3
+	.ascii "uint8_t\0"
+	.byte	0x5
+	.byte	0x1c
+	.long	0x1e8
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.ascii "unsigned char\0"
+	.uleb128 0x3
+	.ascii "uint16_t\0"
+	.byte	0x5
+	.byte	0x1e
+	.long	0x9c
+	.uleb128 0x3
+	.ascii "uint32_t\0"
+	.byte	0x5
+	.byte	0x20
+	.long	0x8c
+	.uleb128 0x3
+	.ascii "uint64_t\0"
+	.byte	0x5
+	.byte	0x22
+	.long	0x229
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.ascii "long long unsigned int\0"
+	.uleb128 0x3
+	.ascii "uin_t\0"
+	.byte	0x6
+	.byte	0xa3
+	.long	0x209
+	.uleb128 0x8
+	.byte	0x8
+	.byte	0x6
+	.byte	0xa8
+	.long	0x266
+	.uleb128 0x6
+	.ascii "id\0"
+	.byte	0x6
+	.byte	0xa9
+	.long	0x266
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x9
+	.long	0x1d9
+	.long	0x276
+	.uleb128 0xa
+	.long	0x276
+	.byte	0x7
+	.byte	0
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.ascii "sizetype\0"
+	.uleb128 0x3
+	.ascii "gg_dcc7_id_t\0"
+	.byte	0x6
+	.byte	0xaa
+	.long	0x250
+	.uleb128 0x8
+	.byte	0x8
+	.byte	0x6
+	.byte	0xaf
+	.long	0x2ac
+	.uleb128 0x6
+	.ascii "id\0"
+	.byte	0x6
+	.byte	0xb0
+	.long	0x266
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x3
+	.ascii "gg_multilogon_id_t\0"
+	.byte	0x6
+	.byte	0xb1
+	.long	0x296
+	.uleb128 0xb
+	.byte	0x4
+	.byte	0x6
+	.byte	0xd4
+	.long	0x34d
+	.uleb128 0xc
+	.ascii "GG_RESOLVER_DEFAULT\0"
+	.sleb128 0
+	.uleb128 0xc
+	.ascii "GG_RESOLVER_FORK\0"
+	.sleb128 1
+	.uleb128 0xc
+	.ascii "GG_RESOLVER_PTHREAD\0"
+	.sleb128 2
+	.uleb128 0xc
+	.ascii "GG_RESOLVER_CUSTOM\0"
+	.sleb128 3
+	.uleb128 0xc
+	.ascii "GG_RESOLVER_WIN32\0"
+	.sleb128 4
+	.uleb128 0xc
+	.ascii "GG_RESOLVER_INVALID\0"
+	.sleb128 -1
+	.byte	0
+	.uleb128 0x3
+	.ascii "gg_resolver_t\0"
+	.byte	0x6
+	.byte	0xdb
+	.long	0x2c6
+	.uleb128 0xb
+	.byte	0x4
+	.byte	0x6
+	.byte	0xe0
+	.long	0x3a9
+	.uleb128 0xc
+	.ascii "GG_ENCODING_CP1250\0"
+	.sleb128 0
+	.uleb128 0xc
+	.ascii "GG_ENCODING_UTF8\0"
+	.sleb128 1
+	.uleb128 0xc
+	.ascii "GG_ENCODING_INVALID\0"
+	.sleb128 -1
+	.byte	0
+	.uleb128 0x3
+	.ascii "gg_encoding_t\0"
+	.byte	0x6
+	.byte	0xe4
+	.long	0x362
+	.uleb128 0xb
+	.byte	0x4
+	.byte	0x6
+	.byte	0xf3
+	.long	0x3fc
+	.uleb128 0xc
+	.ascii "GG_SSL_DISABLED\0"
+	.sleb128 0
+	.uleb128 0xc
+	.ascii "GG_SSL_ENABLED\0"
+	.sleb128 1
+	.uleb128 0xc
+	.ascii "GG_SSL_REQUIRED\0"
+	.sleb128 2
+	.byte	0
+	.uleb128 0x3
+	.ascii "gg_ssl_t\0"
+	.byte	0x6
+	.byte	0xf7
+	.long	0x3be
+	.uleb128 0xd
+	.ascii "gg_session\0"
+	.word	0x102
+	.byte	0x6
+	.word	0x100
+	.long	0x993
+	.uleb128 0xe
+	.ascii "fd\0"
+	.byte	0x6
+	.word	0x101
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "check\0"
+	.byte	0x6
+	.word	0x101
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF0
+	.byte	0x6
+	.word	0x101
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.ascii "error\0"
+	.byte	0x6
+	.word	0x101
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x101
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x101
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xf
+	.secrel32	LASF2
+	.byte	0x6
+	.word	0x101
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xf
+	.secrel32	LASF3
+	.byte	0x6
+	.word	0x101
+	.long	0x9a9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xf
+	.secrel32	LASF4
+	.byte	0x6
+	.word	0x101
+	.long	0x9bb
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x20
+	.uleb128 0xe
+	.ascii "async\0"
+	.byte	0x6
+	.word	0x103
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x24
+	.uleb128 0xe
+	.ascii "pid\0"
+	.byte	0x6
+	.word	0x104
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x28
+	.uleb128 0xe
+	.ascii "port\0"
+	.byte	0x6
+	.word	0x105
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
+	.uleb128 0xe
+	.ascii "seq\0"
+	.byte	0x6
+	.word	0x106
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x30
+	.uleb128 0xe
+	.ascii "last_pong\0"
+	.byte	0x6
+	.word	0x107
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x34
+	.uleb128 0xe
+	.ascii "last_event\0"
+	.byte	0x6
+	.word	0x108
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x38
+	.uleb128 0xf
+	.secrel32	LASF5
+	.byte	0x6
+	.word	0x10a
+	.long	0x9f2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x3c
+	.uleb128 0xe
+	.ascii "proxy_addr\0"
+	.byte	0x6
+	.word	0x10c
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x40
+	.uleb128 0xe
+	.ascii "proxy_port\0"
+	.byte	0x6
+	.word	0x10d
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x44
+	.uleb128 0xe
+	.ascii "hub_addr\0"
+	.byte	0x6
+	.word	0x10f
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x46
+	.uleb128 0xe
+	.ascii "server_addr\0"
+	.byte	0x6
+	.word	0x110
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4a
+	.uleb128 0xe
+	.ascii "client_addr\0"
+	.byte	0x6
+	.word	0x112
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4e
+	.uleb128 0xe
+	.ascii "client_port\0"
+	.byte	0x6
+	.word	0x113
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x52
+	.uleb128 0xe
+	.ascii "external_addr\0"
+	.byte	0x6
+	.word	0x115
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x54
+	.uleb128 0xe
+	.ascii "external_port\0"
+	.byte	0x6
+	.word	0x116
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x58
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x118
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5a
+	.uleb128 0xe
+	.ascii "password\0"
+	.byte	0x6
+	.word	0x119
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5e
+	.uleb128 0xe
+	.ascii "initial_status\0"
+	.byte	0x6
+	.word	0x11b
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x62
+	.uleb128 0xf
+	.secrel32	LASF6
+	.byte	0x6
+	.word	0x11c
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x66
+	.uleb128 0xe
+	.ascii "recv_buf\0"
+	.byte	0x6
+	.word	0x11e
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x6a
+	.uleb128 0xe
+	.ascii "recv_done\0"
+	.byte	0x6
+	.word	0x11f
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x6e
+	.uleb128 0xe
+	.ascii "recv_left\0"
+	.byte	0x6
+	.word	0x120
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x72
+	.uleb128 0xe
+	.ascii "protocol_version\0"
+	.byte	0x6
+	.word	0x122
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x76
+	.uleb128 0xe
+	.ascii "client_version\0"
+	.byte	0x6
+	.word	0x123
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x7a
+	.uleb128 0xe
+	.ascii "last_sysmsg\0"
+	.byte	0x6
+	.word	0x124
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x7e
+	.uleb128 0xe
+	.ascii "initial_descr\0"
+	.byte	0x6
+	.word	0x126
+	.long	0x1b8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x82
+	.uleb128 0xf
+	.secrel32	LASF7
+	.byte	0x6
+	.word	0x128
+	.long	0x9f8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x86
+	.uleb128 0xe
+	.ascii "header_buf\0"
+	.byte	0x6
+	.word	0x12b
+	.long	0x1b8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x8a
+	.uleb128 0xe
+	.ascii "header_done\0"
+	.byte	0x6
+	.word	0x12c
+	.long	0x8c
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x8e
+	.uleb128 0xe
+	.ascii "ssl\0"
+	.byte	0x6
+	.word	0x133
+	.long	0x9f8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x92
+	.uleb128 0xe
+	.ascii "ssl_ctx\0"
+	.byte	0x6
+	.word	0x134
+	.long	0x9f8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x96
+	.uleb128 0xf
+	.secrel32	LASF8
+	.byte	0x6
+	.word	0x137
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x9a
+	.uleb128 0xe
+	.ascii "userlist_reply\0"
+	.byte	0x6
+	.word	0x139
+	.long	0x1b8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x9e
+	.uleb128 0xe
+	.ascii "userlist_blocks\0"
+	.byte	0x6
+	.word	0x13b
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xa2
+	.uleb128 0xe
+	.ascii "images\0"
+	.byte	0x6
+	.word	0x13d
+	.long	0xa9a
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xa6
+	.uleb128 0xe
+	.ascii "hash_type\0"
+	.byte	0x6
+	.word	0x13f
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xaa
+	.uleb128 0xe
+	.ascii "send_buf\0"
+	.byte	0x6
+	.word	0x141
+	.long	0x1b8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xae
+	.uleb128 0xe
+	.ascii "send_left\0"
+	.byte	0x6
+	.word	0x142
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xb2
+	.uleb128 0xe
+	.ascii "dcc7_list\0"
+	.byte	0x6
+	.word	0x144
+	.long	0xd10
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xb6
+	.uleb128 0xf
+	.secrel32	LASF9
+	.byte	0x6
+	.word	0x146
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xba
+	.uleb128 0xe
+	.ascii "protocol_flags\0"
+	.byte	0x6
+	.word	0x148
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xbe
+	.uleb128 0xe
+	.ascii "encoding\0"
+	.byte	0x6
+	.word	0x14a
+	.long	0x3a9
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc2
+	.uleb128 0xe
+	.ascii "resolver_type\0"
+	.byte	0x6
+	.word	0x14c
+	.long	0x34d
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xc6
+	.uleb128 0xe
+	.ascii "resolver_start\0"
+	.byte	0x6
+	.word	0x14d
+	.long	0xd47
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xca
+	.uleb128 0xe
+	.ascii "resolver_cleanup\0"
+	.byte	0x6
+	.word	0x14e
+	.long	0xd5e
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xce
+	.uleb128 0xf
+	.secrel32	LASF10
+	.byte	0x6
+	.word	0x150
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xd2
+	.uleb128 0xf
+	.secrel32	LASF11
+	.byte	0x6
+	.word	0x151
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xd6
+	.uleb128 0xe
+	.ascii "recv_msg_count\0"
+	.byte	0x6
+	.word	0x152
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xda
+	.uleb128 0xe
+	.ascii "resolver_host\0"
+	.byte	0x6
+	.word	0x154
+	.long	0xd3c
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xde
+	.uleb128 0xe
+	.ascii "resolver_result\0"
+	.byte	0x6
+	.word	0x155
+	.long	0xd6e
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xe2
+	.uleb128 0xe
+	.ascii "resolver_index\0"
+	.byte	0x6
+	.word	0x156
+	.long	0x8c
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xe6
+	.uleb128 0xe
+	.ascii "resolver_count\0"
+	.byte	0x6
+	.word	0x157
+	.long	0x8c
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xea
+	.uleb128 0xe
+	.ascii "connect_port\0"
+	.byte	0x6
+	.word	0x159
+	.long	0xd74
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xee
+	.uleb128 0xe
+	.ascii "connect_index\0"
+	.byte	0x6
+	.word	0x15a
+	.long	0x8c
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xf2
+	.uleb128 0xe
+	.ascii "connect_host\0"
+	.byte	0x6
+	.word	0x15c
+	.long	0x1b8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xf6
+	.uleb128 0xe
+	.ascii "ssl_flag\0"
+	.byte	0x6
+	.word	0x15d
+	.long	0x3fc
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xfa
+	.uleb128 0xe
+	.ascii "private_data\0"
+	.byte	0x6
+	.word	0x15f
+	.long	0xd99
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0xfe
+	.byte	0
+	.uleb128 0x10
+	.byte	0x1
+	.long	0x77
+	.long	0x9a3
+	.uleb128 0x11
+	.long	0x9a3
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x40c
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x993
+	.uleb128 0x12
+	.byte	0x1
+	.long	0x9bb
+	.uleb128 0x11
+	.long	0x9a3
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x9af
+	.uleb128 0x13
+	.ascii "gg_event\0"
+	.byte	0x3c
+	.byte	0x6
+	.word	0x553
+	.long	0x9f2
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x554
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF5
+	.byte	0x6
+	.word	0x555
+	.long	0x2c3f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x9c1
+	.uleb128 0x14
+	.byte	0x4
+	.uleb128 0x13
+	.ascii "gg_image_queue\0"
+	.byte	0x20
+	.byte	0x6
+	.word	0x6fb
+	.long	0xa9a
+	.uleb128 0xf
+	.secrel32	LASF12
+	.byte	0x6
+	.word	0x6fc
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "size\0"
+	.byte	0x6
+	.word	0x6fd
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "crc32\0"
+	.byte	0x6
+	.word	0x6fe
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xf
+	.secrel32	LASF13
+	.byte	0x6
+	.word	0x6ff
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.ascii "image\0"
+	.byte	0x6
+	.word	0x700
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xe
+	.ascii "done\0"
+	.byte	0x6
+	.word	0x701
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xe
+	.ascii "next\0"
+	.byte	0x6
+	.word	0x703
+	.long	0xa9a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xe
+	.ascii "packet_type\0"
+	.byte	0x6
+	.word	0x705
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x9fa
+	.uleb128 0xd
+	.ascii "gg_dcc7\0"
+	.word	0x198
+	.byte	0x6
+	.word	0x1d3
+	.long	0xd10
+	.uleb128 0xe
+	.ascii "fd\0"
+	.byte	0x6
+	.word	0x1d4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "check\0"
+	.byte	0x6
+	.word	0x1d4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF0
+	.byte	0x6
+	.word	0x1d4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.ascii "error\0"
+	.byte	0x6
+	.word	0x1d4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x1d4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x1d4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xf
+	.secrel32	LASF2
+	.byte	0x6
+	.word	0x1d4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xf
+	.secrel32	LASF3
+	.byte	0x6
+	.word	0x1d4
+	.long	0x109e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xf
+	.secrel32	LASF4
+	.byte	0x6
+	.word	0x1d4
+	.long	0x10b0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x20
+	.uleb128 0xe
+	.ascii "cid\0"
+	.byte	0x6
+	.word	0x1d6
+	.long	0x282
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x24
+	.uleb128 0xf
+	.secrel32	LASF5
+	.byte	0x6
+	.word	0x1d8
+	.long	0x9f2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x1da
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x30
+	.uleb128 0xf
+	.secrel32	LASF14
+	.byte	0x6
+	.word	0x1db
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x34
+	.uleb128 0xe
+	.ascii "file_fd\0"
+	.byte	0x6
+	.word	0x1dd
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x38
+	.uleb128 0xe
+	.ascii "offset\0"
+	.byte	0x6
+	.word	0x1de
+	.long	0x8c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x3c
+	.uleb128 0xe
+	.ascii "size\0"
+	.byte	0x6
+	.word	0x1df
+	.long	0x8c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x40
+	.uleb128 0xf
+	.secrel32	LASF13
+	.byte	0x6
+	.word	0x1e0
+	.long	0x10b6
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x44
+	.uleb128 0xe
+	.ascii "hash\0"
+	.byte	0x6
+	.word	0x1e2
+	.long	0x10c6
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x144
+	.uleb128 0xe
+	.ascii "dcc_type\0"
+	.byte	0x6
+	.word	0x1e5
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x158
+	.uleb128 0xf
+	.secrel32	LASF15
+	.byte	0x6
+	.word	0x1e6
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x15c
+	.uleb128 0xf
+	.secrel32	LASF16
+	.byte	0x6
+	.word	0x1e7
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x160
+	.uleb128 0xe
+	.ascii "reverse\0"
+	.byte	0x6
+	.word	0x1e8
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x164
+	.uleb128 0xe
+	.ascii "local_addr\0"
+	.byte	0x6
+	.word	0x1ea
+	.long	0x209
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x168
+	.uleb128 0xe
+	.ascii "local_port\0"
+	.byte	0x6
+	.word	0x1eb
+	.long	0x1f9
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x16c
+	.uleb128 0xf
+	.secrel32	LASF17
+	.byte	0x6
+	.word	0x1ed
+	.long	0x209
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x16e
+	.uleb128 0xf
+	.secrel32	LASF18
+	.byte	0x6
+	.word	0x1ee
+	.long	0x1f9
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x172
+	.uleb128 0xe
+	.ascii "sess\0"
+	.byte	0x6
+	.word	0x1f0
+	.long	0x9a3
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x174
+	.uleb128 0xe
+	.ascii "next\0"
+	.byte	0x6
+	.word	0x1f2
+	.long	0xd10
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x178
+	.uleb128 0xf
+	.secrel32	LASF9
+	.byte	0x6
+	.word	0x1f4
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x17c
+	.uleb128 0xe
+	.ascii "seek\0"
+	.byte	0x6
+	.word	0x1f5
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x180
+	.uleb128 0xf
+	.secrel32	LASF7
+	.byte	0x6
+	.word	0x1f7
+	.long	0x9f8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x184
+	.uleb128 0xe
+	.ascii "relay\0"
+	.byte	0x6
+	.word	0x1f9
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x188
+	.uleb128 0xe
+	.ascii "relay_index\0"
+	.byte	0x6
+	.word	0x1fa
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x18c
+	.uleb128 0xe
+	.ascii "relay_count\0"
+	.byte	0x6
+	.word	0x1fb
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x190
+	.uleb128 0xe
+	.ascii "relay_list\0"
+	.byte	0x6
+	.word	0x1fc
+	.long	0x10e6
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x194
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0xaa0
+	.uleb128 0x10
+	.byte	0x1
+	.long	0x77
+	.long	0xd30
+	.uleb128 0x11
+	.long	0xd30
+	.uleb128 0x11
+	.long	0xd36
+	.uleb128 0x11
+	.long	0xd3c
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x77
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x9f8
+	.uleb128 0x7
+	.byte	0x4
+	.long	0xd42
+	.uleb128 0x15
+	.long	0x10a
+	.uleb128 0x7
+	.byte	0x4
+	.long	0xd16
+	.uleb128 0x12
+	.byte	0x1
+	.long	0xd5e
+	.uleb128 0x11
+	.long	0xd36
+	.uleb128 0x11
+	.long	0x77
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0xd4d
+	.uleb128 0x16
+	.ascii "in_addr\0"
+	.byte	0x1
+	.uleb128 0x7
+	.byte	0x4
+	.long	0xd64
+	.uleb128 0x9
+	.long	0x1f9
+	.long	0xd84
+	.uleb128 0xa
+	.long	0x276
+	.byte	0x1
+	.byte	0
+	.uleb128 0x16
+	.ascii "gg_session_private\0"
+	.byte	0x1
+	.uleb128 0x7
+	.byte	0x4
+	.long	0xd84
+	.uleb128 0xd
+	.ascii "gg_file_info\0"
+	.word	0x140
+	.byte	0x6
+	.word	0x19a
+	.long	0xe71
+	.uleb128 0xe
+	.ascii "mode\0"
+	.byte	0x6
+	.word	0x19b
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "ctime\0"
+	.byte	0x6
+	.word	0x19c
+	.long	0xe71
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "atime\0"
+	.byte	0x6
+	.word	0x19d
+	.long	0xe71
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.ascii "mtime\0"
+	.byte	0x6
+	.word	0x19e
+	.long	0xe71
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xe
+	.ascii "size_hi\0"
+	.byte	0x6
+	.word	0x19f
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xe
+	.ascii "size\0"
+	.byte	0x6
+	.word	0x1a0
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x20
+	.uleb128 0xe
+	.ascii "reserved0\0"
+	.byte	0x6
+	.word	0x1a1
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x24
+	.uleb128 0xe
+	.ascii "reserved1\0"
+	.byte	0x6
+	.word	0x1a2
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x28
+	.uleb128 0xf
+	.secrel32	LASF13
+	.byte	0x6
+	.word	0x1a3
+	.long	0xe81
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
+	.uleb128 0xe
+	.ascii "short_filename\0"
+	.byte	0x6
+	.word	0x1a4
+	.long	0xe92
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x132
+	.byte	0
+	.uleb128 0x9
+	.long	0x209
+	.long	0xe81
+	.uleb128 0xa
+	.long	0x276
+	.byte	0x1
+	.byte	0
+	.uleb128 0x9
+	.long	0x1e8
+	.long	0xe92
+	.uleb128 0x17
+	.long	0x276
+	.word	0x105
+	.byte	0
+	.uleb128 0x9
+	.long	0x1e8
+	.long	0xea2
+	.uleb128 0xa
+	.long	0x276
+	.byte	0xd
+	.byte	0
+	.uleb128 0xd
+	.ascii "gg_dcc\0"
+	.word	0x19e
+	.byte	0x6
+	.word	0x1b0
+	.long	0x1060
+	.uleb128 0xe
+	.ascii "fd\0"
+	.byte	0x6
+	.word	0x1b1
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "check\0"
+	.byte	0x6
+	.word	0x1b1
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF0
+	.byte	0x6
+	.word	0x1b1
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.ascii "error\0"
+	.byte	0x6
+	.word	0x1b1
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x1b1
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x1b1
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xf
+	.secrel32	LASF2
+	.byte	0x6
+	.word	0x1b1
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xf
+	.secrel32	LASF3
+	.byte	0x6
+	.word	0x1b1
+	.long	0x1076
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xf
+	.secrel32	LASF4
+	.byte	0x6
+	.word	0x1b1
+	.long	0x1088
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x20
+	.uleb128 0xf
+	.secrel32	LASF5
+	.byte	0x6
+	.word	0x1b3
+	.long	0x9f2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x24
+	.uleb128 0xe
+	.ascii "active\0"
+	.byte	0x6
+	.word	0x1b5
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x28
+	.uleb128 0xe
+	.ascii "port\0"
+	.byte	0x6
+	.word	0x1b6
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x1b7
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x30
+	.uleb128 0xf
+	.secrel32	LASF14
+	.byte	0x6
+	.word	0x1b8
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x34
+	.uleb128 0xe
+	.ascii "file_fd\0"
+	.byte	0x6
+	.word	0x1b9
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x38
+	.uleb128 0xe
+	.ascii "offset\0"
+	.byte	0x6
+	.word	0x1ba
+	.long	0x8c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x3c
+	.uleb128 0xe
+	.ascii "chunk_size\0"
+	.byte	0x6
+	.word	0x1bb
+	.long	0x8c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x40
+	.uleb128 0xe
+	.ascii "chunk_offset\0"
+	.byte	0x6
+	.word	0x1bd
+	.long	0x8c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x44
+	.uleb128 0xe
+	.ascii "file_info\0"
+	.byte	0x6
+	.word	0x1bf
+	.long	0xd9f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x48
+	.uleb128 0xf
+	.secrel32	LASF15
+	.byte	0x6
+	.word	0x1c1
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x188
+	.uleb128 0xe
+	.ascii "voice_buf\0"
+	.byte	0x6
+	.word	0x1c2
+	.long	0x1b8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x18c
+	.uleb128 0xf
+	.secrel32	LASF16
+	.byte	0x6
+	.word	0x1c3
+	.long	0x77
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x190
+	.uleb128 0xe
+	.ascii "chunk_buf\0"
+	.byte	0x6
+	.word	0x1c4
+	.long	0x1b8
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x194
+	.uleb128 0xf
+	.secrel32	LASF17
+	.byte	0x6
+	.word	0x1c5
+	.long	0x209
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x198
+	.uleb128 0xf
+	.secrel32	LASF18
+	.byte	0x6
+	.word	0x1c6
+	.long	0x1f9
+	.byte	0x3
+	.byte	0x23
+	.uleb128 0x19c
+	.byte	0
+	.uleb128 0x10
+	.byte	0x1
+	.long	0x77
+	.long	0x1070
+	.uleb128 0x11
+	.long	0x1070
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0xea2
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x1060
+	.uleb128 0x12
+	.byte	0x1
+	.long	0x1088
+	.uleb128 0x11
+	.long	0x1070
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x107c
+	.uleb128 0x10
+	.byte	0x1
+	.long	0x77
+	.long	0x109e
+	.uleb128 0x11
+	.long	0xd10
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x108e
+	.uleb128 0x12
+	.byte	0x1
+	.long	0x10b0
+	.uleb128 0x11
+	.long	0xd10
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x10a4
+	.uleb128 0x9
+	.long	0x1e8
+	.long	0x10c6
+	.uleb128 0xa
+	.long	0x276
+	.byte	0xff
+	.byte	0
+	.uleb128 0x9
+	.long	0x1e8
+	.long	0x10d6
+	.uleb128 0xa
+	.long	0x276
+	.byte	0x13
+	.byte	0
+	.uleb128 0x16
+	.ascii "gg_dcc7_relay\0"
+	.byte	0x1
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x10d6
+	.uleb128 0x18
+	.ascii "gg_state_t\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x226
+	.long	0x18ad
+	.uleb128 0xc
+	.ascii "GG_STATE_IDLE\0"
+	.sleb128 0
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVING\0"
+	.sleb128 1
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECTING\0"
+	.sleb128 2
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_DATA\0"
+	.sleb128 3
+	.uleb128 0xc
+	.ascii "GG_STATE_ERROR\0"
+	.sleb128 4
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECTING_HUB\0"
+	.sleb128 5
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECTING_GG\0"
+	.sleb128 6
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_KEY\0"
+	.sleb128 7
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_REPLY\0"
+	.sleb128 8
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECTED\0"
+	.sleb128 9
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_QUERY\0"
+	.sleb128 10
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_HEADER\0"
+	.sleb128 11
+	.uleb128 0xc
+	.ascii "GG_STATE_PARSING\0"
+	.sleb128 12
+	.uleb128 0xc
+	.ascii "GG_STATE_DONE\0"
+	.sleb128 13
+	.uleb128 0xc
+	.ascii "GG_STATE_LISTENING\0"
+	.sleb128 14
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_UIN_1\0"
+	.sleb128 15
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_UIN_2\0"
+	.sleb128 16
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_ACK\0"
+	.sleb128 17
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_ACK\0"
+	.sleb128 18
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_REQUEST\0"
+	.sleb128 19
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_REQUEST\0"
+	.sleb128 20
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_FILE_INFO\0"
+	.sleb128 21
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_PRE_FILE_INFO\0"
+	.sleb128 22
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_FILE_INFO\0"
+	.sleb128 23
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_FILE_ACK\0"
+	.sleb128 24
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_FILE_ACK\0"
+	.sleb128 25
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_FILE_HEADER\0"
+	.sleb128 26
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_FILE_HEADER\0"
+	.sleb128 27
+	.uleb128 0xc
+	.ascii "GG_STATE_GETTING_FILE\0"
+	.sleb128 28
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_FILE\0"
+	.sleb128 29
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_VOICE_ACK\0"
+	.sleb128 30
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_VOICE_HEADER\0"
+	.sleb128 31
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_VOICE_SIZE\0"
+	.sleb128 32
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_VOICE_DATA\0"
+	.sleb128 33
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_VOICE_ACK\0"
+	.sleb128 34
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_VOICE_REQUEST\0"
+	.sleb128 35
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_TYPE\0"
+	.sleb128 36
+	.uleb128 0xc
+	.ascii "GG_STATE_TLS_NEGOTIATION\0"
+	.sleb128 37
+	.uleb128 0xc
+	.ascii "GG_STATE_REQUESTING_ID\0"
+	.sleb128 38
+	.uleb128 0xc
+	.ascii "GG_STATE_WAITING_FOR_ACCEPT\0"
+	.sleb128 39
+	.uleb128 0xc
+	.ascii "GG_STATE_WAITING_FOR_INFO\0"
+	.sleb128 40
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_ID\0"
+	.sleb128 41
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_ID\0"
+	.sleb128 42
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVING_GG\0"
+	.sleb128 43
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVING_RELAY\0"
+	.sleb128 44
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECTING_RELAY\0"
+	.sleb128 45
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_RELAY\0"
+	.sleb128 46
+	.uleb128 0xc
+	.ascii "GG_STATE_DISCONNECTING\0"
+	.sleb128 47
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECT_HUB\0"
+	.sleb128 48
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECT_PROXY_HUB\0"
+	.sleb128 49
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECT_GG\0"
+	.sleb128 50
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECT_PROXY_GG\0"
+	.sleb128 51
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECTING_PROXY_HUB\0"
+	.sleb128 52
+	.uleb128 0xc
+	.ascii "GG_STATE_CONNECTING_PROXY_GG\0"
+	.sleb128 53
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_HUB_SYNC\0"
+	.sleb128 54
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_HUB_ASYNC\0"
+	.sleb128 55
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_PROXY_HUB_SYNC\0"
+	.sleb128 56
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_PROXY_HUB_ASYNC\0"
+	.sleb128 57
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_PROXY_GG_SYNC\0"
+	.sleb128 58
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_PROXY_GG_ASYNC\0"
+	.sleb128 59
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_GG_SYNC\0"
+	.sleb128 60
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVE_GG_ASYNC\0"
+	.sleb128 61
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVING_HUB\0"
+	.sleb128 62
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVING_PROXY_HUB\0"
+	.sleb128 63
+	.uleb128 0xc
+	.ascii "GG_STATE_RESOLVING_PROXY_GG\0"
+	.sleb128 64
+	.uleb128 0xc
+	.ascii "GG_STATE_SEND_HUB\0"
+	.sleb128 65
+	.uleb128 0xc
+	.ascii "GG_STATE_SEND_PROXY_HUB\0"
+	.sleb128 66
+	.uleb128 0xc
+	.ascii "GG_STATE_SEND_PROXY_GG\0"
+	.sleb128 67
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_HUB\0"
+	.sleb128 68
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_PROXY_HUB\0"
+	.sleb128 69
+	.uleb128 0xc
+	.ascii "GG_STATE_SENDING_PROXY_GG\0"
+	.sleb128 70
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_HUB\0"
+	.sleb128 71
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_PROXY_HUB\0"
+	.sleb128 72
+	.uleb128 0xc
+	.ascii "GG_STATE_READING_PROXY_GG\0"
+	.sleb128 73
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x1e8
+	.uleb128 0x18
+	.ascii "gg_event_t\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x34e
+	.long	0x1d80
+	.uleb128 0xc
+	.ascii "GG_EVENT_NONE\0"
+	.sleb128 0
+	.uleb128 0xc
+	.ascii "GG_EVENT_MSG\0"
+	.sleb128 1
+	.uleb128 0xc
+	.ascii "GG_EVENT_NOTIFY\0"
+	.sleb128 2
+	.uleb128 0xc
+	.ascii "GG_EVENT_NOTIFY_DESCR\0"
+	.sleb128 3
+	.uleb128 0xc
+	.ascii "GG_EVENT_STATUS\0"
+	.sleb128 4
+	.uleb128 0xc
+	.ascii "GG_EVENT_ACK\0"
+	.sleb128 5
+	.uleb128 0xc
+	.ascii "GG_EVENT_PONG\0"
+	.sleb128 6
+	.uleb128 0xc
+	.ascii "GG_EVENT_CONN_FAILED\0"
+	.sleb128 7
+	.uleb128 0xc
+	.ascii "GG_EVENT_CONN_SUCCESS\0"
+	.sleb128 8
+	.uleb128 0xc
+	.ascii "GG_EVENT_DISCONNECT\0"
+	.sleb128 9
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_NEW\0"
+	.sleb128 10
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_ERROR\0"
+	.sleb128 11
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_DONE\0"
+	.sleb128 12
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_CLIENT_ACCEPT\0"
+	.sleb128 13
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_CALLBACK\0"
+	.sleb128 14
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_NEED_FILE_INFO\0"
+	.sleb128 15
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_NEED_FILE_ACK\0"
+	.sleb128 16
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_NEED_VOICE_ACK\0"
+	.sleb128 17
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_VOICE_DATA\0"
+	.sleb128 18
+	.uleb128 0xc
+	.ascii "GG_EVENT_PUBDIR50_SEARCH_REPLY\0"
+	.sleb128 19
+	.uleb128 0xc
+	.ascii "GG_EVENT_PUBDIR50_READ\0"
+	.sleb128 20
+	.uleb128 0xc
+	.ascii "GG_EVENT_PUBDIR50_WRITE\0"
+	.sleb128 21
+	.uleb128 0xc
+	.ascii "GG_EVENT_STATUS60\0"
+	.sleb128 22
+	.uleb128 0xc
+	.ascii "GG_EVENT_NOTIFY60\0"
+	.sleb128 23
+	.uleb128 0xc
+	.ascii "GG_EVENT_USERLIST\0"
+	.sleb128 24
+	.uleb128 0xc
+	.ascii "GG_EVENT_IMAGE_REQUEST\0"
+	.sleb128 25
+	.uleb128 0xc
+	.ascii "GG_EVENT_IMAGE_REPLY\0"
+	.sleb128 26
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC_ACK\0"
+	.sleb128 27
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC7_NEW\0"
+	.sleb128 28
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC7_ACCEPT\0"
+	.sleb128 29
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC7_REJECT\0"
+	.sleb128 30
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC7_CONNECTED\0"
+	.sleb128 31
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC7_ERROR\0"
+	.sleb128 32
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC7_DONE\0"
+	.sleb128 33
+	.uleb128 0xc
+	.ascii "GG_EVENT_DCC7_PENDING\0"
+	.sleb128 34
+	.uleb128 0xc
+	.ascii "GG_EVENT_XML_EVENT\0"
+	.sleb128 35
+	.uleb128 0xc
+	.ascii "GG_EVENT_DISCONNECT_ACK\0"
+	.sleb128 36
+	.uleb128 0xc
+	.ascii "GG_EVENT_TYPING_NOTIFICATION\0"
+	.sleb128 37
+	.uleb128 0xc
+	.ascii "GG_EVENT_USER_DATA\0"
+	.sleb128 38
+	.uleb128 0xc
+	.ascii "GG_EVENT_MULTILOGON_MSG\0"
+	.sleb128 39
+	.uleb128 0xc
+	.ascii "GG_EVENT_MULTILOGON_INFO\0"
+	.sleb128 40
+	.uleb128 0xc
+	.ascii "GG_EVENT_USERLIST100_VERSION\0"
+	.sleb128 41
+	.uleb128 0xc
+	.ascii "GG_EVENT_USERLIST100_REPLY\0"
+	.sleb128 42
+	.uleb128 0xc
+	.ascii "GG_EVENT_IMTOKEN\0"
+	.sleb128 43
+	.uleb128 0xc
+	.ascii "GG_EVENT_PONG110\0"
+	.sleb128 44
+	.uleb128 0xc
+	.ascii "GG_EVENT_JSON_EVENT\0"
+	.sleb128 45
+	.uleb128 0xc
+	.ascii "GG_EVENT_ACK110\0"
+	.sleb128 46
+	.uleb128 0xc
+	.ascii "GG_EVENT_CHAT_INFO\0"
+	.sleb128 47
+	.uleb128 0xc
+	.ascii "GG_EVENT_CHAT_INFO_GOT_ALL\0"
+	.sleb128 48
+	.uleb128 0xc
+	.ascii "GG_EVENT_CHAT_INFO_UPDATE\0"
+	.sleb128 49
+	.uleb128 0xc
+	.ascii "GG_EVENT_CHAT_CREATED\0"
+	.sleb128 50
+	.uleb128 0xc
+	.ascii "GG_EVENT_CHAT_INVITE_ACK\0"
+	.sleb128 51
+	.byte	0
+	.uleb128 0x18
+	.ascii "gg_failure_t\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x392
+	.long	0x1ebe
+	.uleb128 0xc
+	.ascii "GG_FAILURE_RESOLVING\0"
+	.sleb128 1
+	.uleb128 0xc
+	.ascii "GG_FAILURE_CONNECTING\0"
+	.sleb128 2
+	.uleb128 0xc
+	.ascii "GG_FAILURE_INVALID\0"
+	.sleb128 3
+	.uleb128 0xc
+	.ascii "GG_FAILURE_READING\0"
+	.sleb128 4
+	.uleb128 0xc
+	.ascii "GG_FAILURE_WRITING\0"
+	.sleb128 5
+	.uleb128 0xc
+	.ascii "GG_FAILURE_PASSWORD\0"
+	.sleb128 6
+	.uleb128 0xc
+	.ascii "GG_FAILURE_404\0"
+	.sleb128 7
+	.uleb128 0xc
+	.ascii "GG_FAILURE_TLS\0"
+	.sleb128 8
+	.uleb128 0xc
+	.ascii "GG_FAILURE_NEED_EMAIL\0"
+	.sleb128 9
+	.uleb128 0xc
+	.ascii "GG_FAILURE_INTRUDER\0"
+	.sleb128 10
+	.uleb128 0xc
+	.ascii "GG_FAILURE_UNAVAILABLE\0"
+	.sleb128 11
+	.uleb128 0xc
+	.ascii "GG_FAILURE_PROXY\0"
+	.sleb128 12
+	.uleb128 0xc
+	.ascii "GG_FAILURE_HUB\0"
+	.sleb128 13
+	.uleb128 0xc
+	.ascii "GG_FAILURE_INTERNAL\0"
+	.sleb128 14
+	.byte	0
+	.uleb128 0x18
+	.ascii "gg_error_t\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x3aa
+	.long	0x2013
+	.uleb128 0xc
+	.ascii "GG_ERROR_RESOLVING\0"
+	.sleb128 1
+	.uleb128 0xc
+	.ascii "GG_ERROR_CONNECTING\0"
+	.sleb128 2
+	.uleb128 0xc
+	.ascii "GG_ERROR_READING\0"
+	.sleb128 3
+	.uleb128 0xc
+	.ascii "GG_ERROR_WRITING\0"
+	.sleb128 4
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC_HANDSHAKE\0"
+	.sleb128 5
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC_FILE\0"
+	.sleb128 6
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC_EOF\0"
+	.sleb128 7
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC_NET\0"
+	.sleb128 8
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC_REFUSED\0"
+	.sleb128 9
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC7_HANDSHAKE\0"
+	.sleb128 10
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC7_FILE\0"
+	.sleb128 11
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC7_EOF\0"
+	.sleb128 12
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC7_NET\0"
+	.sleb128 13
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC7_REFUSED\0"
+	.sleb128 14
+	.uleb128 0xc
+	.ascii "GG_ERROR_DCC7_RELAY\0"
+	.sleb128 15
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_pubdir50_entry\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x3c1
+	.long	0x2060
+	.uleb128 0xe
+	.ascii "num\0"
+	.byte	0x6
+	.word	0x3c2
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "field\0"
+	.byte	0x6
+	.word	0x3c3
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "value\0"
+	.byte	0x6
+	.word	0x3c4
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_pubdir50_s\0"
+	.byte	0x18
+	.byte	0x6
+	.word	0x3cc
+	.long	0x20e3
+	.uleb128 0xe
+	.ascii "count\0"
+	.byte	0x6
+	.word	0x3cd
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "next\0"
+	.byte	0x6
+	.word	0x3ce
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x3cf
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.ascii "seq\0"
+	.byte	0x6
+	.word	0x3d0
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.ascii "entries\0"
+	.byte	0x6
+	.word	0x3d1
+	.long	0x20e3
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xe
+	.ascii "entries_count\0"
+	.byte	0x6
+	.word	0x3d2
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x2013
+	.uleb128 0x19
+	.ascii "gg_pubdir50_t\0"
+	.byte	0x6
+	.word	0x3db
+	.long	0x20ff
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x2060
+	.uleb128 0x13
+	.ascii "gg_event_msg\0"
+	.byte	0x38
+	.byte	0x6
+	.word	0x3e0
+	.long	0x220c
+	.uleb128 0xf
+	.secrel32	LASF12
+	.byte	0x6
+	.word	0x3e1
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "msgclass\0"
+	.byte	0x6
+	.word	0x3e2
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF19
+	.byte	0x6
+	.word	0x3e6
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.ascii "message\0"
+	.byte	0x6
+	.word	0x3e8
+	.long	0x18ad
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.ascii "recipients_count\0"
+	.byte	0x6
+	.word	0x3ea
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xe
+	.ascii "recipients\0"
+	.byte	0x6
+	.word	0x3eb
+	.long	0x220c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xe
+	.ascii "formats_length\0"
+	.byte	0x6
+	.word	0x3ed
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0xe
+	.ascii "formats\0"
+	.byte	0x6
+	.word	0x3ee
+	.long	0x9f8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0xe
+	.ascii "seq\0"
+	.byte	0x6
+	.word	0x3ef
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x20
+	.uleb128 0xe
+	.ascii "xhtml_message\0"
+	.byte	0x6
+	.word	0x3f1
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x24
+	.uleb128 0xe
+	.ascii "chat_id\0"
+	.byte	0x6
+	.word	0x3f3
+	.long	0x219
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x28
+	.uleb128 0xe
+	.ascii "flags\0"
+	.byte	0x6
+	.word	0x3f4
+	.long	0x219
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x30
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x243
+	.uleb128 0x13
+	.ascii "gg_event_notify_descr\0"
+	.byte	0x8
+	.byte	0x6
+	.word	0x3fa
+	.long	0x2253
+	.uleb128 0xe
+	.ascii "notify\0"
+	.byte	0x6
+	.word	0x3fb
+	.long	0x22ca
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF20
+	.byte	0x6
+	.word	0x3fc
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_notify_reply\0"
+	.byte	0x14
+	.byte	0x6
+	.word	0x860
+	.long	0x22ca
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x861
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF6
+	.byte	0x6
+	.word	0x862
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF21
+	.byte	0x6
+	.word	0x863
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xf
+	.secrel32	LASF18
+	.byte	0x6
+	.word	0x864
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xf
+	.secrel32	LASF22
+	.byte	0x6
+	.word	0x865
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xe
+	.uleb128 0xe
+	.ascii "dunno2\0"
+	.byte	0x6
+	.word	0x866
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x12
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x2253
+	.uleb128 0x13
+	.ascii "gg_event_status\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x402
+	.long	0x2317
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x403
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF6
+	.byte	0x6
+	.word	0x404
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF20
+	.byte	0x6
+	.word	0x405
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_status60\0"
+	.byte	0x1e
+	.byte	0x6
+	.word	0x40b
+	.long	0x23ab
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x40c
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF6
+	.byte	0x6
+	.word	0x40d
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF21
+	.byte	0x6
+	.word	0x40e
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xf
+	.secrel32	LASF18
+	.byte	0x6
+	.word	0x40f
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xf
+	.secrel32	LASF22
+	.byte	0x6
+	.word	0x410
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xe
+	.uleb128 0xf
+	.secrel32	LASF8
+	.byte	0x6
+	.word	0x411
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x12
+	.uleb128 0xf
+	.secrel32	LASF20
+	.byte	0x6
+	.word	0x412
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x16
+	.uleb128 0xf
+	.secrel32	LASF19
+	.byte	0x6
+	.word	0x416
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1a
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_notify60\0"
+	.byte	0x1e
+	.byte	0x6
+	.word	0x41d
+	.long	0x243f
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x41e
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF6
+	.byte	0x6
+	.word	0x41f
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF21
+	.byte	0x6
+	.word	0x420
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xf
+	.secrel32	LASF18
+	.byte	0x6
+	.word	0x421
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xf
+	.secrel32	LASF22
+	.byte	0x6
+	.word	0x422
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xe
+	.uleb128 0xf
+	.secrel32	LASF8
+	.byte	0x6
+	.word	0x423
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x12
+	.uleb128 0xf
+	.secrel32	LASF20
+	.byte	0x6
+	.word	0x424
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x16
+	.uleb128 0xf
+	.secrel32	LASF19
+	.byte	0x6
+	.word	0x428
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1a
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_ack\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x42f
+	.long	0x2489
+	.uleb128 0xe
+	.ascii "recipient\0"
+	.byte	0x6
+	.word	0x430
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF6
+	.byte	0x6
+	.word	0x431
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "seq\0"
+	.byte	0x6
+	.word	0x432
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_ack110\0"
+	.byte	0x9
+	.byte	0x6
+	.word	0x438
+	.long	0x24d5
+	.uleb128 0xe
+	.ascii "msg_type\0"
+	.byte	0x6
+	.word	0x439
+	.long	0x1d9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "seq\0"
+	.byte	0x6
+	.word	0x43a
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1
+	.uleb128 0xf
+	.secrel32	LASF19
+	.byte	0x6
+	.word	0x43b
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_userlist\0"
+	.byte	0x5
+	.byte	0x6
+	.word	0x441
+	.long	0x2511
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x442
+	.long	0x10a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "reply\0"
+	.byte	0x6
+	.word	0x443
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_dcc_voice_data\0"
+	.byte	0x8
+	.byte	0x6
+	.word	0x449
+	.long	0x2555
+	.uleb128 0xe
+	.ascii "data\0"
+	.byte	0x6
+	.word	0x44a
+	.long	0x2555
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "length\0"
+	.byte	0x6
+	.word	0x44b
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x1d9
+	.uleb128 0x13
+	.ascii "gg_event_image_request\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x451
+	.long	0x25ac
+	.uleb128 0xf
+	.secrel32	LASF12
+	.byte	0x6
+	.word	0x452
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "size\0"
+	.byte	0x6
+	.word	0x453
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "crc32\0"
+	.byte	0x6
+	.word	0x454
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_image_reply\0"
+	.byte	0x14
+	.byte	0x6
+	.word	0x45a
+	.long	0x261b
+	.uleb128 0xf
+	.secrel32	LASF12
+	.byte	0x6
+	.word	0x45b
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "size\0"
+	.byte	0x6
+	.word	0x45c
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "crc32\0"
+	.byte	0x6
+	.word	0x45d
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xf
+	.secrel32	LASF13
+	.byte	0x6
+	.word	0x45e
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.ascii "image\0"
+	.byte	0x6
+	.word	0x45f
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_xml_event\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x465
+	.long	0x2648
+	.uleb128 0xe
+	.ascii "data\0"
+	.byte	0x6
+	.word	0x466
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_json_event\0"
+	.byte	0x8
+	.byte	0x6
+	.word	0x46c
+	.long	0x2685
+	.uleb128 0xe
+	.ascii "data\0"
+	.byte	0x6
+	.word	0x46d
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x46e
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_dcc7_connected\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x474
+	.long	0x26b7
+	.uleb128 0xe
+	.ascii "dcc7\0"
+	.byte	0x6
+	.word	0x475
+	.long	0xd10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_dcc7_pending\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x47b
+	.long	0x26e7
+	.uleb128 0xe
+	.ascii "dcc7\0"
+	.byte	0x6
+	.word	0x47c
+	.long	0xd10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_dcc7_reject\0"
+	.byte	0x8
+	.byte	0x6
+	.word	0x482
+	.long	0x2728
+	.uleb128 0xe
+	.ascii "dcc7\0"
+	.byte	0x6
+	.word	0x483
+	.long	0xd10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "reason\0"
+	.byte	0x6
+	.word	0x484
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_dcc7_accept\0"
+	.byte	0xe
+	.byte	0x6
+	.word	0x48a
+	.long	0x2784
+	.uleb128 0xe
+	.ascii "dcc7\0"
+	.byte	0x6
+	.word	0x48b
+	.long	0xd10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x48c
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xf
+	.secrel32	LASF21
+	.byte	0x6
+	.word	0x48d
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xf
+	.secrel32	LASF18
+	.byte	0x6
+	.word	0x48e
+	.long	0x1f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_dcc7_done\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x494
+	.long	0x27b1
+	.uleb128 0xe
+	.ascii "dcc7\0"
+	.byte	0x6
+	.word	0x495
+	.long	0xd10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_typing_notification\0"
+	.byte	0x8
+	.byte	0x6
+	.word	0x49b
+	.long	0x27f9
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x49c
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "length\0"
+	.byte	0x6
+	.word	0x49d
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_user_data_attr\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x4a3
+	.long	0x284a
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x4a4
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "key\0"
+	.byte	0x6
+	.word	0x4a5
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "value\0"
+	.byte	0x6
+	.word	0x4a6
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_user_data_user\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x4ac
+	.long	0x28a2
+	.uleb128 0xe
+	.ascii "uin\0"
+	.byte	0x6
+	.word	0x4ad
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "attr_count\0"
+	.byte	0x6
+	.word	0x4ae
+	.long	0x7e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "attrs\0"
+	.byte	0x6
+	.word	0x4af
+	.long	0x28a2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x27f9
+	.uleb128 0x13
+	.ascii "gg_event_user_data\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x4b5
+	.long	0x28fb
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x4b6
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "user_count\0"
+	.byte	0x6
+	.word	0x4b7
+	.long	0x7e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xe
+	.ascii "users\0"
+	.byte	0x6
+	.word	0x4b8
+	.long	0x28fb
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x284a
+	.uleb128 0x13
+	.ascii "gg_multilogon_session\0"
+	.byte	0x1c
+	.byte	0x6
+	.word	0x4be
+	.long	0x2982
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x4bf
+	.long	0x2ac
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "name\0"
+	.byte	0x6
+	.word	0x4c0
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xf
+	.secrel32	LASF17
+	.byte	0x6
+	.word	0x4c1
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xf
+	.secrel32	LASF11
+	.byte	0x6
+	.word	0x4c2
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xf
+	.secrel32	LASF10
+	.byte	0x6
+	.word	0x4c3
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xe
+	.ascii "logon_time\0"
+	.byte	0x6
+	.word	0x4c7
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_multilogon_info\0"
+	.byte	0x8
+	.byte	0x6
+	.word	0x4ce
+	.long	0x29ca
+	.uleb128 0xe
+	.ascii "count\0"
+	.byte	0x6
+	.word	0x4cf
+	.long	0x77
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "sessions\0"
+	.byte	0x6
+	.word	0x4d0
+	.long	0x29ca
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x2901
+	.uleb128 0x13
+	.ascii "gg_event_userlist100_version\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x4d6
+	.long	0x2a06
+	.uleb128 0xf
+	.secrel32	LASF22
+	.byte	0x6
+	.word	0x4d7
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_userlist100_reply\0"
+	.byte	0xa
+	.byte	0x6
+	.word	0x4dd
+	.long	0x2a71
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x4de
+	.long	0x10a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF22
+	.byte	0x6
+	.word	0x4df
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1
+	.uleb128 0xe
+	.ascii "format_type\0"
+	.byte	0x6
+	.word	0x4e0
+	.long	0x10a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5
+	.uleb128 0xe
+	.ascii "reply\0"
+	.byte	0x6
+	.word	0x4e1
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x6
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_imtoken\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x4e7
+	.long	0x2a9f
+	.uleb128 0xe
+	.ascii "imtoken\0"
+	.byte	0x6
+	.word	0x4e8
+	.long	0x1b8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_pong110\0"
+	.byte	0x4
+	.byte	0x6
+	.word	0x4ee
+	.long	0x2ac9
+	.uleb128 0xf
+	.secrel32	LASF19
+	.byte	0x6
+	.word	0x4f2
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_chat_info\0"
+	.byte	0x14
+	.byte	0x6
+	.word	0x4f9
+	.long	0x2b39
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x4fa
+	.long	0x219
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF22
+	.byte	0x6
+	.word	0x4fb
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.ascii "participants_count\0"
+	.byte	0x6
+	.word	0x4fc
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.ascii "participants\0"
+	.byte	0x6
+	.word	0x4fd
+	.long	0x220c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_chat_info_update\0"
+	.byte	0x1c
+	.byte	0x6
+	.word	0x503
+	.long	0x2bc2
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x504
+	.long	0x219
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xf
+	.secrel32	LASF1
+	.byte	0x6
+	.word	0x505
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xe
+	.ascii "participant\0"
+	.byte	0x6
+	.word	0x506
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xe
+	.ascii "inviter\0"
+	.byte	0x6
+	.word	0x507
+	.long	0x243
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xf
+	.secrel32	LASF22
+	.byte	0x6
+	.word	0x508
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xf
+	.secrel32	LASF19
+	.byte	0x6
+	.word	0x509
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_chat_created\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x50f
+	.long	0x2bff
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x510
+	.long	0x219
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "seq\0"
+	.byte	0x6
+	.word	0x511
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x13
+	.ascii "gg_event_chat_invite_ack\0"
+	.byte	0xc
+	.byte	0x6
+	.word	0x517
+	.long	0x2c3f
+	.uleb128 0xe
+	.ascii "id\0"
+	.byte	0x6
+	.word	0x518
+	.long	0x219
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xe
+	.ascii "seq\0"
+	.byte	0x6
+	.word	0x519
+	.long	0x209
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x1a
+	.ascii "gg_event_union\0"
+	.byte	0x38
+	.byte	0x6
+	.word	0x522
+	.long	0x2f20
+	.uleb128 0x1b
+	.ascii "failure\0"
+	.byte	0x6
+	.word	0x523
+	.long	0x1d80
+	.uleb128 0x1b
+	.ascii "notify\0"
+	.byte	0x6
+	.word	0x524
+	.long	0x22ca
+	.uleb128 0x1b
+	.ascii "notify_descr\0"
+	.byte	0x6
+	.word	0x525
+	.long	0x2212
+	.uleb128 0x1c
+	.secrel32	LASF6
+	.byte	0x6
+	.word	0x526
+	.long	0x22d0
+	.uleb128 0x1b
+	.ascii "status60\0"
+	.byte	0x6
+	.word	0x527
+	.long	0x2317
+	.uleb128 0x1b
+	.ascii "notify60\0"
+	.byte	0x6
+	.word	0x528
+	.long	0x2f20
+	.uleb128 0x1b
+	.ascii "msg\0"
+	.byte	0x6
+	.word	0x529
+	.long	0x2105
+	.uleb128 0x1b
+	.ascii "ack\0"
+	.byte	0x6
+	.word	0x52a
+	.long	0x243f
+	.uleb128 0x1b
+	.ascii "ack110\0"
+	.byte	0x6
+	.word	0x52b
+	.long	0x2489
+	.uleb128 0x1b
+	.ascii "image_request\0"
+	.byte	0x6
+	.word	0x52c
+	.long	0x255b
+	.uleb128 0x1b
+	.ascii "image_reply\0"
+	.byte	0x6
+	.word	0x52d
+	.long	0x25ac
+	.uleb128 0x1b
+	.ascii "userlist\0"
+	.byte	0x6
+	.word	0x52e
+	.long	0x24d5
+	.uleb128 0x1b
+	.ascii "pubdir50\0"
+	.byte	0x6
+	.word	0x52f
+	.long	0x20e9
+	.uleb128 0x1b
+	.ascii "xml_event\0"
+	.byte	0x6
+	.word	0x530
+	.long	0x261b
+	.uleb128 0x1b
+	.ascii "json_event\0"
+	.byte	0x6
+	.word	0x531
+	.long	0x2648
+	.uleb128 0x1b
+	.ascii "dcc_new\0"
+	.byte	0x6
+	.word	0x532
+	.long	0x1070
+	.uleb128 0x1b
+	.ascii "dcc_error\0"
+	.byte	0x6
+	.word	0x533
+	.long	0x1ebe
+	.uleb128 0x1b
+	.ascii "dcc_voice_data\0"
+	.byte	0x6
+	.word	0x534
+	.long	0x2511
+	.uleb128 0x1b
+	.ascii "dcc7_new\0"
+	.byte	0x6
+	.word	0x535
+	.long	0xd10
+	.uleb128 0x1b
+	.ascii "dcc7_error\0"
+	.byte	0x6
+	.word	0x536
+	.long	0x1ebe
+	.uleb128 0x1b
+	.ascii "dcc7_connected\0"
+	.byte	0x6
+	.word	0x537
+	.long	0x2685
+	.uleb128 0x1b
+	.ascii "dcc7_pending\0"
+	.byte	0x6
+	.word	0x538
+	.long	0x26b7
+	.uleb128 0x1b
+	.ascii "dcc7_reject\0"
+	.byte	0x6
+	.word	0x539
+	.long	0x26e7
+	.uleb128 0x1b
+	.ascii "dcc7_accept\0"
+	.byte	0x6
+	.word	0x53a
+	.long	0x2728
+	.uleb128 0x1b
+	.ascii "dcc7_done\0"
+	.byte	0x6
+	.word	0x53b
+	.long	0x2784
+	.uleb128 0x1b
+	.ascii "typing_notification\0"
+	.byte	0x6
+	.word	0x53c
+	.long	0x27b1
+	.uleb128 0x1b
+	.ascii "user_data\0"
+	.byte	0x6
+	.word	0x53d
+	.long	0x28a8
+	.uleb128 0x1b
+	.ascii "multilogon_msg\0"
+	.byte	0x6
+	.word	0x53e
+	.long	0x2105
+	.uleb128 0x1b
+	.ascii "multilogon_info\0"
+	.byte	0x6
+	.word	0x53f
+	.long	0x2982
+	.uleb128 0x1b
+	.ascii "userlist100_version\0"
+	.byte	0x6
+	.word	0x540
+	.long	0x29d0
+	.uleb128 0x1b
+	.ascii "userlist100_reply\0"
+	.byte	0x6
+	.word	0x541
+	.long	0x2a06
+	.uleb128 0x1b
+	.ascii "imtoken\0"
+	.byte	0x6
+	.word	0x542
+	.long	0x2a71
+	.uleb128 0x1b
+	.ascii "pong110\0"
+	.byte	0x6
+	.word	0x543
+	.long	0x2a9f
+	.uleb128 0x1b
+	.ascii "chat_info\0"
+	.byte	0x6
+	.word	0x544
+	.long	0x2ac9
+	.uleb128 0x1b
+	.ascii "chat_info_update\0"
+	.byte	0x6
+	.word	0x545
+	.long	0x2b39
+	.uleb128 0x1b
+	.ascii "chat_created\0"
+	.byte	0x6
+	.word	0x546
+	.long	0x2bc2
+	.uleb128 0x1b
+	.ascii "chat_invite_ack\0"
+	.byte	0x6
+	.word	0x547
+	.long	0x2bff
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x23ab
+	.uleb128 0x1d
+	.byte	0x1
+	.ascii "gg_debug_common\0"
+	.byte	0x1
+	.byte	0x66
+	.byte	0x1
+	.byte	0x1
+	.long	0x2f6d
+	.uleb128 0x1e
+	.ascii "sess\0"
+	.byte	0x1
+	.byte	0x66
+	.long	0x9a3
+	.uleb128 0x1f
+	.secrel32	LASF23
+	.byte	0x1
+	.byte	0x66
+	.long	0x77
+	.uleb128 0x1f
+	.secrel32	LASF24
+	.byte	0x1
+	.byte	0x66
+	.long	0xd3c
+	.uleb128 0x1e
+	.ascii "ap\0"
+	.byte	0x1
+	.byte	0x66
+	.long	0x112
+	.byte	0
+	.uleb128 0x20
+	.long	0x2f26
+	.long	LFB10
+	.long	LFE10
+	.secrel32	LLST0
+	.long	0x2fec
+	.uleb128 0x21
+	.long	0x2f40
+	.byte	0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x21
+	.long	0x2f4c
+	.byte	0x2
+	.byte	0x91
+	.sleb128 4
+	.uleb128 0x21
+	.long	0x2f57
+	.byte	0x2
+	.byte	0x91
+	.sleb128 8
+	.uleb128 0x21
+	.long	0x2f62
+	.byte	0x2
+	.byte	0x91
+	.sleb128 12
+	.uleb128 0x22
+	.long	0x2f26
+	.long	LBB4
+	.secrel32	Ldebug_ranges0+0
+	.byte	0x1
+	.byte	0x66
+	.long	0x2fe2
+	.uleb128 0x23
+	.long	0x2f62
+	.secrel32	LLST1
+	.uleb128 0x23
+	.long	0x2f57
+	.secrel32	LLST2
+	.uleb128 0x24
+	.secrel32	Ldebug_ranges0+0x20
+	.uleb128 0x25
+	.long	0x2f4c
+	.uleb128 0x25
+	.long	0x2f40
+	.uleb128 0x26
+	.long	LVL5
+	.byte	0x1
+	.long	0x33e1
+	.byte	0
+	.byte	0
+	.uleb128 0x27
+	.long	LVL8
+	.long	0x3409
+	.byte	0
+	.uleb128 0x28
+	.byte	0x1
+	.ascii "gg_debug\0"
+	.byte	0x1
+	.byte	0x79
+	.byte	0x1
+	.long	LFB11
+	.long	LFE11
+	.secrel32	LLST3
+	.byte	0x1
+	.long	0x308a
+	.uleb128 0x29
+	.secrel32	LASF23
+	.byte	0x1
+	.byte	0x79
+	.long	0x77
+	.byte	0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x29
+	.secrel32	LASF24
+	.byte	0x1
+	.byte	0x79
+	.long	0xd3c
+	.byte	0x2
+	.byte	0x91
+	.sleb128 4
+	.uleb128 0x2a
+	.uleb128 0x2b
+	.ascii "ap\0"
+	.byte	0x1
+	.byte	0x7b
+	.long	0x112
+	.secrel32	LLST4
+	.uleb128 0x2c
+	.secrel32	LASF25
+	.byte	0x1
+	.byte	0x7c
+	.long	0x77
+	.secrel32	LLST5
+	.uleb128 0x27
+	.long	LVL10
+	.long	0x341f
+	.uleb128 0x2d
+	.long	LVL13
+	.long	0x2f26
+	.long	0x3077
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 0
+	.byte	0x1
+	.byte	0x30
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 4
+	.byte	0x2
+	.byte	0x76
+	.sleb128 0
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 8
+	.byte	0x2
+	.byte	0x77
+	.sleb128 0
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 12
+	.byte	0x2
+	.byte	0x91
+	.sleb128 8
+	.byte	0
+	.uleb128 0x27
+	.long	LVL14
+	.long	0x341f
+	.uleb128 0x27
+	.long	LVL17
+	.long	0x3409
+	.byte	0
+	.uleb128 0x28
+	.byte	0x1
+	.ascii "gg_debug_session\0"
+	.byte	0x1
+	.byte	0x8d
+	.byte	0x1
+	.long	LFB12
+	.long	LFE12
+	.secrel32	LLST6
+	.byte	0x1
+	.long	0x313e
+	.uleb128 0x2f
+	.ascii "gs\0"
+	.byte	0x1
+	.byte	0x8d
+	.long	0x9a3
+	.byte	0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x29
+	.secrel32	LASF23
+	.byte	0x1
+	.byte	0x8d
+	.long	0x77
+	.byte	0x2
+	.byte	0x91
+	.sleb128 4
+	.uleb128 0x29
+	.secrel32	LASF24
+	.byte	0x1
+	.byte	0x8d
+	.long	0xd3c
+	.byte	0x2
+	.byte	0x91
+	.sleb128 8
+	.uleb128 0x2a
+	.uleb128 0x2b
+	.ascii "ap\0"
+	.byte	0x1
+	.byte	0x8f
+	.long	0x112
+	.secrel32	LLST7
+	.uleb128 0x2c
+	.secrel32	LASF25
+	.byte	0x1
+	.byte	0x90
+	.long	0x77
+	.secrel32	LLST8
+	.uleb128 0x27
+	.long	LVL19
+	.long	0x341f
+	.uleb128 0x2d
+	.long	LVL22
+	.long	0x2f26
+	.long	0x312b
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 0
+	.byte	0x2
+	.byte	0x76
+	.sleb128 0
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 4
+	.byte	0x2
+	.byte	0x77
+	.sleb128 0
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 8
+	.byte	0x2
+	.byte	0x75
+	.sleb128 0
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 12
+	.byte	0x2
+	.byte	0x91
+	.sleb128 12
+	.byte	0
+	.uleb128 0x27
+	.long	LVL23
+	.long	0x341f
+	.uleb128 0x27
+	.long	LVL26
+	.long	0x3409
+	.byte	0
+	.uleb128 0x28
+	.byte	0x1
+	.ascii "gg_debug_dump\0"
+	.byte	0x1
+	.byte	0xa2
+	.byte	0x1
+	.long	LFB13
+	.long	LFE13
+	.secrel32	LLST9
+	.byte	0x1
+	.long	0x3272
+	.uleb128 0x2f
+	.ascii "gs\0"
+	.byte	0x1
+	.byte	0xa2
+	.long	0x9a3
+	.byte	0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x29
+	.secrel32	LASF23
+	.byte	0x1
+	.byte	0xa2
+	.long	0x77
+	.byte	0x2
+	.byte	0x91
+	.sleb128 4
+	.uleb128 0x2f
+	.ascii "buf\0"
+	.byte	0x1
+	.byte	0xa2
+	.long	0xd3c
+	.byte	0x2
+	.byte	0x91
+	.sleb128 8
+	.uleb128 0x2f
+	.ascii "len\0"
+	.byte	0x1
+	.byte	0xa2
+	.long	0x7e
+	.byte	0x2
+	.byte	0x91
+	.sleb128 12
+	.uleb128 0x30
+	.ascii "line\0"
+	.byte	0x1
+	.byte	0xa4
+	.long	0x3272
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -116
+	.uleb128 0x2b
+	.ascii "i\0"
+	.byte	0x1
+	.byte	0xa5
+	.long	0x8c
+	.secrel32	LLST10
+	.uleb128 0x2b
+	.ascii "j\0"
+	.byte	0x1
+	.byte	0xa5
+	.long	0x8c
+	.secrel32	LLST11
+	.uleb128 0x31
+	.secrel32	Ldebug_ranges0+0x40
+	.long	0x3268
+	.uleb128 0x2b
+	.ascii "ofs\0"
+	.byte	0x1
+	.byte	0xa8
+	.long	0x77
+	.secrel32	LLST12
+	.uleb128 0x31
+	.secrel32	Ldebug_ranges0+0x58
+	.long	0x31f3
+	.uleb128 0x2b
+	.ascii "ch\0"
+	.byte	0x1
+	.byte	0xba
+	.long	0x1e8
+	.secrel32	LLST13
+	.byte	0
+	.uleb128 0x2d
+	.long	LVL30
+	.long	0x3430
+	.long	0x321a
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 0
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -116
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 4
+	.byte	0x5
+	.byte	0x3
+	.long	LC0
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 8
+	.byte	0x2
+	.byte	0x77
+	.sleb128 0
+	.byte	0
+	.uleb128 0x2d
+	.long	LVL32
+	.long	0x3430
+	.long	0x3239
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 0
+	.byte	0x2
+	.byte	0x75
+	.sleb128 0
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 4
+	.byte	0x5
+	.byte	0x3
+	.long	LC1
+	.byte	0
+	.uleb128 0x32
+	.long	LVL43
+	.long	0x308a
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 0
+	.byte	0x4
+	.byte	0x91
+	.sleb128 -136
+	.byte	0x6
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 4
+	.byte	0x4
+	.byte	0x91
+	.sleb128 -132
+	.byte	0x6
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 8
+	.byte	0x5
+	.byte	0x3
+	.long	LC2
+	.uleb128 0x2e
+	.byte	0x2
+	.byte	0x74
+	.sleb128 12
+	.byte	0x3
+	.byte	0x91
+	.sleb128 -116
+	.byte	0
+	.byte	0
+	.uleb128 0x27
+	.long	LVL46
+	.long	0x3409
+	.byte	0
+	.uleb128 0x9
+	.long	0x10a
+	.long	0x3282
+	.uleb128 0xa
+	.long	0x276
+	.byte	0x4f
+	.byte	0
+	.uleb128 0x33
+	.byte	0x1
+	.ascii "gg_debug_state\0"
+	.byte	0x1
+	.byte	0xd8
+	.byte	0x1
+	.long	0xd3c
+	.long	LFB14
+	.long	LFE14
+	.secrel32	LLST14
+	.byte	0x1
+	.long	0x32c3
+	.uleb128 0x29
+	.secrel32	LASF0
+	.byte	0x1
+	.byte	0xd8
+	.long	0x10ec
+	.byte	0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x27
+	.long	LVL48
+	.long	0x3409
+	.byte	0
+	.uleb128 0x34
+	.byte	0x1
+	.ascii "gg_debug_event\0"
+	.byte	0x1
+	.word	0x137
+	.byte	0x1
+	.long	0xd3c
+	.long	LFB15
+	.long	LFE15
+	.secrel32	LLST15
+	.byte	0x1
+	.long	0x3306
+	.uleb128 0x35
+	.secrel32	LASF5
+	.byte	0x1
+	.word	0x137
+	.long	0x18b3
+	.byte	0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x27
+	.long	LVL50
+	.long	0x3409
+	.byte	0
+	.uleb128 0x9
+	.long	0x1be
+	.long	0x3311
+	.uleb128 0x36
+	.byte	0
+	.uleb128 0x37
+	.ascii "_iob\0"
+	.byte	0x4
+	.byte	0x9a
+	.long	0x3306
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x38
+	.ascii "gg_debug_level\0"
+	.byte	0x1
+	.byte	0x2b
+	.long	0x77
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.long	_gg_debug_level
+	.uleb128 0x12
+	.byte	0x1
+	.long	0x3352
+	.uleb128 0x11
+	.long	0x77
+	.uleb128 0x11
+	.long	0xd3c
+	.uleb128 0x11
+	.long	0x112
+	.byte	0
+	.uleb128 0x38
+	.ascii "gg_debug_handler\0"
+	.byte	0x1
+	.byte	0x3a
+	.long	0x3371
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.long	_gg_debug_handler
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x333c
+	.uleb128 0x12
+	.byte	0x1
+	.long	0x3392
+	.uleb128 0x11
+	.long	0x9a3
+	.uleb128 0x11
+	.long	0x77
+	.uleb128 0x11
+	.long	0xd3c
+	.uleb128 0x11
+	.long	0x112
+	.byte	0
+	.uleb128 0x38
+	.ascii "gg_debug_handler_session\0"
+	.byte	0x1
+	.byte	0x4a
+	.long	0x33b9
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.long	_gg_debug_handler_session
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x3377
+	.uleb128 0x38
+	.ascii "gg_debug_file\0"
+	.byte	0x1
+	.byte	0x56
+	.long	0x33db
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.long	_gg_debug_file
+	.uleb128 0x7
+	.byte	0x4
+	.long	0x1be
+	.uleb128 0x39
+	.byte	0x1
+	.ascii "vfprintf\0"
+	.byte	0x4
+	.word	0x128
+	.byte	0x1
+	.long	0x77
+	.byte	0x1
+	.long	0x3409
+	.uleb128 0x11
+	.long	0x33db
+	.uleb128 0x11
+	.long	0xd3c
+	.uleb128 0x11
+	.long	0xdc
+	.byte	0
+	.uleb128 0x3a
+	.byte	0x1
+	.ascii "__stack_chk_fail\0"
+	.byte	0x1
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x3b
+	.byte	0x1
+	.ascii "_errno\0"
+	.byte	0x7
+	.byte	0x5b
+	.byte	0x1
+	.long	0xd30
+	.byte	0x1
+	.uleb128 0x3c
+	.byte	0x1
+	.ascii "sprintf\0"
+	.byte	0x4
+	.word	0x127
+	.byte	0x1
+	.long	0x77
+	.byte	0x1
+	.uleb128 0x11
+	.long	0x1b8
+	.uleb128 0x11
+	.long	0xd3c
+	.uleb128 0x2a
+	.byte	0
+	.byte	0
+	.section	.debug_abbrev,"dr"
+Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0xd
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0x5
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xe
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xf
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x10
+	.uleb128 0x15
+	.byte	0x1
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x12
+	.uleb128 0x15
+	.byte	0x1
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x13
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x14
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x15
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x16
+	.uleb128 0x13
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x17
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0x5
+	.byte	0
+	.byte	0
+	.uleb128 0x18
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x19
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1a
+	.uleb128 0x17
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1b
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1d
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x20
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1e
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1f
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x20
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0x6
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x21
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x22
+	.uleb128 0x1d
+	.byte	0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x52
+	.uleb128 0x1
+	.uleb128 0x55
+	.uleb128 0x6
+	.uleb128 0x58
+	.uleb128 0xb
+	.uleb128 0x59
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x23
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x24
+	.uleb128 0xb
+	.byte	0x1
+	.uleb128 0x55
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x25
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x26
+	.uleb128 0x4109
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x2115
+	.uleb128 0xc
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x27
+	.uleb128 0x4109
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x28
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0x6
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x29
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x2a
+	.uleb128 0x18
+	.byte	0
+	.byte	0
+	.byte	0
+	.uleb128 0x2b
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2c
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2d
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x2e
+	.uleb128 0x410a
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0xa
+	.uleb128 0x2111
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x2f
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x30
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0xb
+	.byte	0x1
+	.uleb128 0x55
+	.uleb128 0x6
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x32
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x33
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0x6
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x34
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0x6
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x35
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x36
+	.uleb128 0x21
+	.byte	0
+	.byte	0
+	.byte	0
+	.uleb128 0x37
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x38
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x39
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x3a
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x34
+	.uleb128 0xc
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x3b
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x3c
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.byte	0
+	.section	.debug_loc,"dr"
+Ldebug_loc0:
+LLST0:
+	.long	LFB10-Ltext0
+	.long	LCFI0-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI0-Ltext0
+	.long	LCFI1-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI1-Ltext0
+	.long	LCFI2-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI2-Ltext0
+	.long	LCFI3-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI3-Ltext0
+	.long	LCFI4-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	LCFI4-Ltext0
+	.long	LCFI5-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI5-Ltext0
+	.long	LCFI6-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI6-Ltext0
+	.long	LCFI7-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI7-Ltext0
+	.long	LCFI8-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI8-Ltext0
+	.long	LCFI9-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	LCFI9-Ltext0
+	.long	LCFI10-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI10-Ltext0
+	.long	LCFI11-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI11-Ltext0
+	.long	LCFI12-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI12-Ltext0
+	.long	LCFI13-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI13-Ltext0
+	.long	LCFI14-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	LCFI14-Ltext0
+	.long	LCFI15-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI15-Ltext0
+	.long	LCFI16-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI16-Ltext0
+	.long	LCFI17-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI17-Ltext0
+	.long	LCFI18-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI18-Ltext0
+	.long	LCFI19-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	LCFI19-Ltext0
+	.long	LCFI20-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI20-Ltext0
+	.long	LCFI21-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI21-Ltext0
+	.long	LCFI22-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI22-Ltext0
+	.long	LCFI23-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI23-Ltext0
+	.long	LFE10-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	0
+	.long	0
+LLST1:
+	.long	LVL3-Ltext0
+	.long	LVL4-Ltext0
+	.word	0x1
+	.byte	0x53
+	.long	LVL4-Ltext0
+	.long	LVL5-Ltext0
+	.word	0x2
+	.byte	0x91
+	.sleb128 12
+	.long	LVL6-Ltext0
+	.long	LVL7-Ltext0
+	.word	0x1
+	.byte	0x53
+	.long	0
+	.long	0
+LLST2:
+	.long	LVL3-Ltext0
+	.long	LVL5-1-Ltext0
+	.word	0x1
+	.byte	0x51
+	.long	LVL5-1-Ltext0
+	.long	LVL5-Ltext0
+	.word	0x2
+	.byte	0x91
+	.sleb128 8
+	.long	LVL6-Ltext0
+	.long	LVL7-Ltext0
+	.word	0x1
+	.byte	0x51
+	.long	0
+	.long	0
+LLST3:
+	.long	LFB11-Ltext0
+	.long	LCFI24-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI24-Ltext0
+	.long	LCFI25-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI25-Ltext0
+	.long	LCFI26-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI26-Ltext0
+	.long	LCFI27-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI27-Ltext0
+	.long	LCFI28-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 48
+	.long	LCFI28-Ltext0
+	.long	LCFI29-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI29-Ltext0
+	.long	LCFI30-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI30-Ltext0
+	.long	LCFI31-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI31-Ltext0
+	.long	LCFI32-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI32-Ltext0
+	.long	LFE11-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 48
+	.long	0
+	.long	0
+LLST4:
+	.long	LVL12-Ltext0
+	.long	LVL13-1-Ltext0
+	.word	0x1
+	.byte	0x50
+	.long	LVL13-1-Ltext0
+	.long	LFE11-Ltext0
+	.word	0x3
+	.byte	0x91
+	.sleb128 8
+	.byte	0x9f
+	.long	0
+	.long	0
+LLST5:
+	.long	LVL11-Ltext0
+	.long	LVL15-Ltext0
+	.word	0x1
+	.byte	0x53
+	.long	LVL16-Ltext0
+	.long	LFE11-Ltext0
+	.word	0x1
+	.byte	0x53
+	.long	0
+	.long	0
+LLST6:
+	.long	LFB12-Ltext0
+	.long	LCFI33-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI33-Ltext0
+	.long	LCFI34-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI34-Ltext0
+	.long	LCFI35-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI35-Ltext0
+	.long	LCFI36-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI36-Ltext0
+	.long	LCFI37-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 20
+	.long	LCFI37-Ltext0
+	.long	LCFI38-Ltext0
+	.word	0x3
+	.byte	0x74
+	.sleb128 64
+	.long	LCFI38-Ltext0
+	.long	LCFI39-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 20
+	.long	LCFI39-Ltext0
+	.long	LCFI40-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI40-Ltext0
+	.long	LCFI41-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI41-Ltext0
+	.long	LCFI42-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI42-Ltext0
+	.long	LCFI43-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI43-Ltext0
+	.long	LFE12-Ltext0
+	.word	0x3
+	.byte	0x74
+	.sleb128 64
+	.long	0
+	.long	0
+LLST7:
+	.long	LVL21-Ltext0
+	.long	LVL22-1-Ltext0
+	.word	0x1
+	.byte	0x50
+	.long	LVL22-1-Ltext0
+	.long	LFE12-Ltext0
+	.word	0x3
+	.byte	0x91
+	.sleb128 12
+	.byte	0x9f
+	.long	0
+	.long	0
+LLST8:
+	.long	LVL20-Ltext0
+	.long	LVL24-Ltext0
+	.word	0x1
+	.byte	0x53
+	.long	LVL25-Ltext0
+	.long	LFE12-Ltext0
+	.word	0x1
+	.byte	0x53
+	.long	0
+	.long	0
+LLST9:
+	.long	LFB13-Ltext0
+	.long	LCFI44-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI44-Ltext0
+	.long	LCFI45-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI45-Ltext0
+	.long	LCFI46-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI46-Ltext0
+	.long	LCFI47-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI47-Ltext0
+	.long	LCFI48-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 20
+	.long	LCFI48-Ltext0
+	.long	LCFI49-Ltext0
+	.word	0x3
+	.byte	0x74
+	.sleb128 176
+	.long	LCFI49-Ltext0
+	.long	LCFI50-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 20
+	.long	LCFI50-Ltext0
+	.long	LCFI51-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 16
+	.long	LCFI51-Ltext0
+	.long	LCFI52-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 12
+	.long	LCFI52-Ltext0
+	.long	LCFI53-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 8
+	.long	LCFI53-Ltext0
+	.long	LCFI54-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI54-Ltext0
+	.long	LFE13-Ltext0
+	.word	0x3
+	.byte	0x74
+	.sleb128 176
+	.long	0
+	.long	0
+LLST10:
+	.long	LVL28-Ltext0
+	.long	LVL29-Ltext0
+	.word	0x2
+	.byte	0x30
+	.byte	0x9f
+	.long	LVL44-Ltext0
+	.long	LVL45-Ltext0
+	.word	0x1
+	.byte	0x57
+	.long	0
+	.long	0
+LLST11:
+	.long	LVL30-Ltext0
+	.long	LVL31-Ltext0
+	.word	0x2
+	.byte	0x30
+	.byte	0x9f
+	.long	LVL33-Ltext0
+	.long	LVL34-Ltext0
+	.word	0x2
+	.byte	0x30
+	.byte	0x9f
+	.long	LVL37-Ltext0
+	.long	LVL38-Ltext0
+	.word	0x1
+	.byte	0x50
+	.long	LVL39-Ltext0
+	.long	LVL42-Ltext0
+	.word	0x1
+	.byte	0x50
+	.long	0
+	.long	0
+LLST12:
+	.long	LVL30-Ltext0
+	.long	LVL31-Ltext0
+	.word	0x2
+	.byte	0x36
+	.byte	0x9f
+	.long	LVL33-Ltext0
+	.long	LVL34-Ltext0
+	.word	0x3
+	.byte	0x8
+	.byte	0x38
+	.byte	0x9f
+	.long	LVL40-Ltext0
+	.long	LVL41-Ltext0
+	.word	0x3
+	.byte	0x8
+	.byte	0x49
+	.byte	0x9f
+	.long	LVL41-Ltext0
+	.long	LVL45-Ltext0
+	.word	0x3
+	.byte	0x8
+	.byte	0x4a
+	.byte	0x9f
+	.long	0
+	.long	0
+LLST13:
+	.long	LVL35-Ltext0
+	.long	LVL36-Ltext0
+	.word	0x1
+	.byte	0x52
+	.long	0
+	.long	0
+LLST14:
+	.long	LFB14-Ltext0
+	.long	LCFI55-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI55-Ltext0
+	.long	LCFI56-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	LCFI56-Ltext0
+	.long	LCFI57-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI57-Ltext0
+	.long	LFE14-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	0
+	.long	0
+LLST15:
+	.long	LFB15-Ltext0
+	.long	LCFI58-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI58-Ltext0
+	.long	LCFI59-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	LCFI59-Ltext0
+	.long	LCFI60-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 4
+	.long	LCFI60-Ltext0
+	.long	LFE15-Ltext0
+	.word	0x2
+	.byte	0x74
+	.sleb128 32
+	.long	0
+	.long	0
+	.section	.debug_aranges,"dr"
+	.long	0x1c
+	.word	0x2
+	.secrel32	Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.word	0
+	.word	0
+	.long	Ltext0
+	.long	Letext0-Ltext0
+	.long	0
+	.long	0
+	.section	.debug_ranges,"dr"
+Ldebug_ranges0:
+	.long	LBB4-Ltext0
+	.long	LBE4-Ltext0
+	.long	LBB8-Ltext0
+	.long	LBE8-Ltext0
+	.long	LBB9-Ltext0
+	.long	LBE9-Ltext0
+	.long	0
+	.long	0
+	.long	LBB5-Ltext0
+	.long	LBE5-Ltext0
+	.long	LBB6-Ltext0
+	.long	LBE6-Ltext0
+	.long	LBB7-Ltext0
+	.long	LBE7-Ltext0
+	.long	0
+	.long	0
+	.long	LBB10-Ltext0
+	.long	LBE10-Ltext0
+	.long	LBB13-Ltext0
+	.long	LBE13-Ltext0
+	.long	0
+	.long	0
+	.long	LBB11-Ltext0
+	.long	LBE11-Ltext0
+	.long	LBB12-Ltext0
+	.long	LBE12-Ltext0
+	.long	0
+	.long	0
+	.section	.debug_line,"dr"
+Ldebug_line0:
+	.section	.debug_str,"dr"
+LASF15:
+	.ascii "established\0"
+LASF9:
+	.ascii "soft_timeout\0"
+LASF23:
+	.ascii "level\0"
+LASF16:
+	.ascii "incoming\0"
+LASF0:
+	.ascii "state\0"
+LASF7:
+	.ascii "resolver\0"
+LASF5:
+	.ascii "event\0"
+LASF12:
+	.ascii "sender\0"
+LASF3:
+	.ascii "callback\0"
+LASF21:
+	.ascii "remote_ip\0"
+LASF25:
+	.ascii "old_errno\0"
+LASF22:
+	.ascii "version\0"
+LASF24:
+	.ascii "format\0"
+LASF13:
+	.ascii "filename\0"
+LASF20:
+	.ascii "descr\0"
+LASF17:
+	.ascii "remote_addr\0"
+LASF10:
+	.ascii "protocol_features\0"
+LASF4:
+	.ascii "destroy\0"
+LASF11:
+	.ascii "status_flags\0"
+LASF19:
+	.ascii "time\0"
+LASF2:
+	.ascii "timeout\0"
+LASF1:
+	.ascii "type\0"
+LASF6:
+	.ascii "status\0"
+LASF8:
+	.ascii "image_size\0"
+LASF14:
+	.ascii "peer_uin\0"
+LASF18:
+	.ascii "remote_port\0"
+	.def	_vfprintf;	.scl	2;	.type	32;	.endef
+	.def	___stack_chk_fail;	.scl	2;	.type	32;	.endef
+	.def	__errno;	.scl	2;	.type	32;	.endef
+	.def	_sprintf;	.scl	2;	.type	32;	.endef
