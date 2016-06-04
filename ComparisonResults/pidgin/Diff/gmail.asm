@@ -1,0 +1,21 @@
+_jabber_gmail_parse
+original code :
+push|push|push|push|sub|mov|mov|mov|mov|mov|xor|cmp|je|mov|mov|call|mov|test|je|mov|mov|call|test|je|cmp|jne|mov|mov|call|mov|mov|mov|mov|call|test|je|mov|mov|xor|inc|mov|call|test|jne|mov|lea|mov|call|mov|mov|call|mov|mov|call|mov|mov|call|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|mov|test|je|cmp|jne|mov|mov|mov|mov|call|mov|mov|test|je|mov|mov|call|mov|mov|mov|call|mov|mov|call|mov|test|je|mov|mov|call|test|je|mov|mov|call|mov|mov|mov|repe|jne|mov|call|mov|test|jne|dec|mov|call|mov|inc|test|jne|mov|test|jle|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|cmp|sete|movzx|mov|mov|mov|mov|mov|mov|call|mov|mov|call|mov|mov|call|mov|mov|call|xor|mov|test|jle|mov|mov|mov|mov|call|inc|cmp|jne|mov|mov|call|mov|mov|call|mov|mov|mov|call|test|je|cmp|je|mov|mov|mov|mov|call|mov|mov|call|mov|mov|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|mov|call|mov|test|je|cmp|jne|mov|mov|call|mov|mov|mov|call|mov|sal|mov|add|mov|test|je|mov|mov|mov|add|test|je|mov|mov|add|test|je|mov|mov|mov|mov|mov|mov|call|mov|test|je|mov|mov|test|je|mov|mov|call|test|jle|mov|call|mov|call|mov|mov|jmp|mov|jmp|mov|jmp|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|test|jne|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|jmp|test|jne|mov|test|jle|mov|jmp|mov|call|jmp|mov|mov|call|mov|mov|mov|mov|mov|mov|lea|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|call|jmp|call|endproc|_jabber_gmail_poke|
+disassembled code :
+push|push|push|push|sub|mov|mov|mov|mov|mov|xor|cmp|je|mov|mov|call|mov|test|je|mov|mov|call|test|je|cmp|jne|mov|mov|call|mov|mov|mov|mov|call|test|je|mov|mov|xor|inc|mov|call|test|jne|mov|lea|mov|call|mov|mov|call|mov|mov|call|mov|mov|call|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|mov|test|je|cmp|jne|mov|mov|mov|mov|call|mov|mov|test|je|mov|mov|call|mov|mov|mov|call|mov|mov|call|mov|test|je|xchg|mov|mov|call|test|je|mov|mov|call|mov|mov|mov|repe|jne|mov|call|mov|test|jne|dec|mov|call|mov|inc|test|jne|mov|test|jle|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|cmp|sete|movzx|mov|mov|mov|mov|mov|mov|call|mov|mov|call|mov|mov|call|mov|mov|call|xor|mov|test|jle|mov|mov|mov|mov|call|inc|cmp|jne|mov|mov|call|mov|mov|call|mov|mov|mov|call|test|je|cmp|je|mov|mov|mov|mov|call|mov|mov|call|mov|mov|lea|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|mov|call|mov|test|je|cmp|jne|mov|mov|call|mov|mov|mov|call|mov|shl|mov|add|mov|test|je|mov|mov|mov|add|test|je|mov|mov|add|test|je|mov|mov|mov|mov|mov|mov|call|mov|test|je|mov|mov|test|je|mov|mov|call|test|jle|mov|call|mov|call|mov|mov|jmp|mov|jmp|mov|jmp|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|test|jne|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|jmp|test|jne|mov|test|jle|mov|jmp|mov|call|jmp|mov|mov|call|mov|mov|mov|mov|mov|mov|lea|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|call|jmp|call|
+
+end _jabber_gmail_parse
+_jabber_gmail_poke
+original code :
+push|push|push|push|sub|mov|mov|mov|mov|mov|mov|xor|mov|mov|mov|call|test|je|test|je|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|mov|call|mov|test|je|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|call|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|test|je|mov|mov|mov|mov|call|mov|mov|test|je|mov|mov|mov|call|mov|xor|jne|mov|add|pop|pop|pop|pop|jmp|call|endproc|_jabber_gmail_init|
+disassembled code :
+push|push|push|push|sub|mov|mov|mov|mov|mov|mov|xor|mov|mov|mov|call|test|je|test|je|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|mov|call|mov|test|je|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|call|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|test|je|mov|mov|mov|mov|call|mov|mov|test|je|mov|mov|mov|call|mov|xor|jne|mov|add|pop|pop|pop|pop|jmp|call|
+
+end _jabber_gmail_poke
+_jabber_gmail_init
+original code :
+push|push|push|sub|mov|mov|mov|xor|mov|mov|call|mov|call|test|jne|mov|xor|jne|add|pop|pop|pop|ret|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|call|mov|mov|mov|call|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|xor|jne|mov|add|pop|pop|pop|jmp|call|endproc|
+disassembled code :
+push|push|push|sub|mov|mov|mov|xor|mov|mov|call|mov|call|test|jne|mov|xor|jne|add|pop|pop|pop|ret|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|call|mov|mov|mov|call|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|xor|jne|mov|add|pop|pop|pop|jmp|call|
+
+end _jabber_gmail_init
