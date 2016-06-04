@@ -1,0 +1,42 @@
+_tcl_signal_callback
+original code :
+push|push|push|push|sub|mov|mov|mov|mov|xor|mov|mov|sal|mov|call|mov|mov|sal|mov|call|mov|mov|call|mov|mov|call|mov|mov|mov|mov|call|mov|inc|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|call|mov|test|jle|mov|mov|xor|lea|mov|mov|mov|call|test|jne|mov|mov|mov|call|cmp|ja|jmp|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|test|jne|lea|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|inc|add|cmp|jg|mov|mov|mov|mov|mov|mov|call|test|je|mov|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|xor|mov|test|jle|mov|jmp|mov|mov|mov|call|cmp|je|inc|cmp|jle|mov|mov|mov|call|mov|mov|mov|mov|call|lea|mov|mov|mov|call|test|je|mov|mov|mov|call|dec|je|mov|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|test|je|lea|mov|mov|mov|mov|test|je|mov|test|je|mov|xor|repne|mov|not|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|test|je|lea|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|lea|test|mov|je|mov|mov|mov|mov|jmp|mov|mov|mov|call|cmp|ja|jmp|mov|mov|mov|call|lea|test|mov|je|mov|mov|mov|jmp|mov|mov|mov|call|mov|mov|mov|call|test|jne|lea|mov|mov|mov|mov|mov|call|cmp|xor|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|test|je|mov|mov|test|je|mov|test|je|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|inc|cmp|jg|mov|mov|mov|call|mov|mov|mov|call|mov|mov|call|mov|mov|call|mov|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|mov|call|jmp|lea|mov|mov|mov|mov|mov|call|mov|mov|jmp|mov|mov|call|mov|mov|jmp|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|mov|mov|test|je|mov|call|cmp|je|lea|mov|mov|mov|mov|mov|call|test|je|mov|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|mov|jmp|jmp|mov|mov|mov|call|test|je|mov|mov|add|mov|call|cmp|ja|jmp|lea|mov|mov|jmp|mov|mov|call|mov|mov|mov|jmp|mov|mov|call|jmp|mov|add|jmp|mov|jmp|mov|jmp|mov|jmp|mov|jmp|mov|jmp|mov|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|mov|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|call|jmp|mov|mov|mov|call|mov|jmp|mov|mov|call|mov|call|mov|jmp|call|endproc|_tcl_signal_init|
+disassembled code :
+push|push|push|push|sub|mov|mov|mov|mov|xor|mov|mov|shl|mov|call|mov|mov|shl|mov|call|mov|mov|call|mov|mov|call|mov|mov|mov|mov|call|mov|inc|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|call|mov|test|jle|mov|mov|xor|lea|lea|mov|mov|mov|call|test|jne|mov|mov|mov|call|cmp|ja|jmp|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|test|jne|lea|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|inc|add|cmp|jg|mov|mov|mov|mov|mov|mov|call|test|je|mov|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|xor|mov|test|jle|mov|jmp|mov|mov|mov|call|cmp|je|inc|cmp|jle|mov|mov|mov|call|mov|mov|mov|mov|call|lea|mov|mov|mov|call|test|je|mov|mov|mov|call|dec|je|mov|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|test|je|lea|mov|mov|mov|mov|test|je|mov|test|je|mov|xor|repne|mov|not|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|test|je|lea|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|lea|test|mov|je|mov|mov|mov|mov|jmp|mov|mov|mov|call|cmp|ja|jmp|mov|mov|mov|call|lea|test|mov|je|mov|mov|mov|jmp|mov|mov|mov|call|mov|mov|mov|call|test|jne|lea|mov|mov|mov|mov|mov|call|cmp|xor|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|test|je|mov|mov|test|je|mov|test|je|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|inc|cmp|jg|mov|mov|mov|call|mov|mov|mov|call|mov|mov|call|mov|mov|call|mov|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|mov|call|jmp|lea|mov|mov|mov|mov|mov|call|mov|mov|jmp|mov|mov|call|mov|mov|jmp|mov|mov|call|mov|mov|jmp|mov|mov|mov|call|mov|mov|test|je|mov|call|cmp|je|lea|mov|mov|mov|mov|mov|call|test|je|mov|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|mov|jmp|jmp|mov|mov|mov|call|test|je|mov|mov|add|mov|call|cmp|ja|jmp|lea|mov|mov|jmp|mov|mov|call|mov|mov|mov|jmp|mov|mov|call|jmp|mov|add|jmp|mov|jmp|mov|jmp|mov|jmp|mov|jmp|mov|jmp|mov|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|call|jmp|mov|mov|mov|call|mov|jmp|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|mov|mov|call|jmp|mov|mov|mov|call|mov|jmp|mov|mov|call|mov|call|mov|jmp|call|
+
+end _tcl_signal_callback
+_tcl_signal_init
+original code :
+sub|mov|mov|xor|mov|mov|xor|jne|add|ret|call|endproc|_tcl_signal_handler_free|
+disassembled code :
+sub|mov|mov|xor|mov|mov|xor|jne|add|ret|call|
+
+end _tcl_signal_init
+_tcl_signal_handler_free
+original code :
+push|sub|mov|mov|mov|xor|test|je|mov|mov|dec|mov|test|jle|mov|test|je|mov|dec|mov|test|jle|mov|xor|jne|mov|add|pop|jmp|mov|mov|call|jmp|mov|xor|jne|add|pop|ret|mov|mov|call|jmp|call|endproc|_tcl_signal_cleanup|
+disassembled code :
+push|sub|mov|mov|mov|xor|test|je|mov|mov|dec|mov|test|jle|mov|test|je|mov|dec|mov|test|jle|mov|xor|jne|mov|add|pop|jmp|mov|mov|call|jmp|mov|xor|jne|add|pop|ret|mov|mov|call|jmp|call|
+
+end _tcl_signal_handler_free
+_tcl_signal_cleanup
+original code :
+push|push|sub|mov|mov|mov|xor|mov|test|je|mov|cmp|je|mov|test|jne|mov|mov|mov|call|mov|mov|xor|jne|add|pop|pop|ret|mov|call|mov|jmp|xor|jmp|call|endproc|_tcl_signal_disconnect|
+disassembled code :
+push|push|sub|mov|mov|mov|xor|mov|test|je|xchg|mov|cmp|je|mov|test|jne|mov|mov|mov|call|mov|mov|xor|jne|add|pop|pop|ret|mov|call|mov|jmp|xor|jmp|call|
+
+end _tcl_signal_cleanup
+_tcl_signal_disconnect
+original code :
+push|push|push|push|sub|mov|mov|mov|mov|mov|xor|mov|test|jne|jmp|mov|test|je|mov|cmp|jne|cmp|jne|mov|mov|mov|mov|call|mov|mov|mov|call|test|mov|jne|mov|mov|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|call|mov|mov|call|mov|mov|mov|mov|call|mov|mov|xor|jne|add|pop|pop|pop|pop|ret|call|endproc|_tcl_signal_connect|
+disassembled code :
+push|push|push|push|sub|mov|mov|mov|mov|mov|xor|mov|test|jne|jmp|mov|test|je|mov|cmp|jne|cmp|jne|mov|mov|mov|mov|call|mov|mov|mov|call|test|mov|jne|mov|mov|mov|mov|mov|call|mov|call|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|mov|call|mov|mov|call|mov|mov|mov|mov|call|mov|xchg|mov|xor|jne|add|pop|pop|pop|pop|ret|call|
+
+end _tcl_signal_disconnect
+_tcl_signal_connect
+original code :
+push|push|push|push|sub|mov|mov|mov|xor|mov|mov|mov|call|lea|mov|lea|mov|lea|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|test|jne|xor|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|lea|mov|mov|mov|mov|lea|mov|call|mov|mov|mov|call|mov|inc|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|test|je|mov|mov|dec|mov|test|jle|mov|mov|call|xor|jmp|mov|mov|call|mov|mov|mov|call|mov|mov|jmp|mov|mov|call|jmp|call|endproc|
+disassembled code :
+push|push|push|push|sub|mov|mov|mov|xor|mov|mov|mov|call|lea|mov|lea|mov|lea|mov|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|mov|call|test|jne|xor|mov|xor|jne|add|pop|pop|pop|pop|ret|mov|lea|mov|mov|mov|mov|lea|mov|call|mov|mov|mov|call|mov|inc|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|mov|mov|mov|mov|mov|call|test|je|mov|mov|dec|mov|test|jle|mov|mov|call|xor|jmp|mov|mov|call|mov|mov|mov|call|mov|mov|jmp|mov|mov|call|jmp|call|
+
+end _tcl_signal_connect
