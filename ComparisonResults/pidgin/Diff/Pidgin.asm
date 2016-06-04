@@ -1,0 +1,7 @@
+_boot_Pidgin
+original code :
+push|push|push|sub|mov|mov|mov|xor|call|mov|call|call|mov|call|mov|mov|sub|mov|call|mov|call|mov|lea|inc|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|call|mov|call|mov|test|je|call|mov|call|mov|call|mov|call|mov|call|mov|mov|mov|call|call|mov|call|lea|mov|add|call|mov|call|mov|call|mov|call|mov|call|mov|call|add|mov|mov|xor|jne|add|pop|pop|pop|ret|call|endproc|
+disassembled code :
+push|push|push|sub|mov|mov|mov|xor|call|mov|call|call|mov|call|mov|mov|sub|mov|call|mov|call|mov|lea|inc|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|mov|mov|mov|call|call|mov|call|mov|test|je|call|mov|call|mov|call|mov|call|mov|call|mov|mov|mov|call|call|mov|call|lea|mov|add|call|mov|call|mov|call|mov|call|mov|call|mov|call|add|mov|mov|xor|jne|add|pop|pop|pop|ret|call|
+
+end _boot_Pidgin
