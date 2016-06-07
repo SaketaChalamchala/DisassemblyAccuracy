@@ -1,0 +1,53 @@
+﻿Build started 2/8/2016 6:01:04 PM.
+Project "D:\mozilla\mozilla\mozilla.vcxproj" on node 2 (Build target(s)).
+Build:
+  d:\buildmozilla.bat d:\mozilla
+  The system cannot find the path specified.
+  Error running mach:
+  
+      ['G\xc7\xf4log-no-times', 'build', 'binaries']
+  
+  The error occurred in mach itself. This is likely a bug in mach itself or a
+  fundamental problem with a loaded module.
+  
+  Please consider filing a bug against mach by going to the URL:
+  
+      https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=mach
+  
+  
+  If filing a bug, please include the full output of mach, including this error
+  message.
+  
+  The details of the failure are as follows:
+  
+  UnicodeDecodeError: 'ascii' codec can't decode byte 0xc7 in position 1: ordinal not in range(128)
+  
+    File "d:\mozilla\python/mach\mach\main.py", line 336, in run
+      return self._run(argv)
+    File "d:\mozilla\python/mach\mach\main.py", line 382, in _run
+      args = parser.parse_args(argv)
+    File "c:\mozilla-build\python\lib\argparse.py", line 1701, in parse_args
+      args, argv = self.parse_known_args(args, namespace)
+    File "c:\mozilla-build\python\lib\argparse.py", line 1733, in parse_known_args
+      namespace, args = self._parse_known_args(args, namespace)
+    File "c:\mozilla-build\python\lib\argparse.py", line 1942, in _parse_known_args
+      stop_index = consume_positionals(start_index)
+    File "c:\mozilla-build\python\lib\argparse.py", line 1898, in consume_positionals
+      take_action(action, args)
+    File "c:\mozilla-build\python\lib\argparse.py", line 1807, in take_action
+      action(self, namespace, argument_values, option_string)
+    File "d:\mozilla\python/mach\mach\dispatcher.py", line 130, in __call__
+      suggested_commands |= {cmd for cmd in names if cmd.startswith(command)}
+    File "d:\mozilla\python/mach\mach\dispatcher.py", line 130, in <setcomp>
+      suggested_commands |= {cmd for cmd in names if cmd.startswith(command)}
+  d:\mozilla\python/mach\mach\dispatcher.py:95: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+    if command == 'help':
+  c:\mozilla-build\python\lib\difflib.py:433: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+    a[besti-1] == b[bestj-1]:
+  c:\mozilla-build\python\lib\difflib.py:437: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+    a[besti+bestsize] == b[bestj+bestsize]:
+Done Building Project "D:\mozilla\mozilla\mozilla.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.40
