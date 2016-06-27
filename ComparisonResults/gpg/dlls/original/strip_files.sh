@@ -1,0 +1,1 @@
+for f in *; do strip --strip-all "$f" -o ../full/"$f"; done
