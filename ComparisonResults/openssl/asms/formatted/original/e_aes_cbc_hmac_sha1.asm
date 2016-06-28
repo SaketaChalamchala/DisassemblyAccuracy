@@ -1,0 +1,6 @@
+xor
+retn
+
+xor
+retn
+
