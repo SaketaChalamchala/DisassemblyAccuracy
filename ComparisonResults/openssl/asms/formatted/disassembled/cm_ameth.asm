@@ -1,0 +1,9 @@
+mov
+retn
+mov
+mov
+test
+jz
+mov
+jmp
+retn
