@@ -1,0 +1,5 @@
+jmp
+jmp
+mov
+retn
+
